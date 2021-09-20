@@ -1,0 +1,587 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>_NeT_AnGeLs_ Enemy Territory Clan</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<META NAME="RESOURCE-TYPE" CONTENT="DOCUMENT">
+<META NAME="DISTRIBUTION" CONTENT="GLOBAL">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<META NAME="REVISIT-AFTER" CONTENT="1 DAYS">
+<META NAME="RATING" CONTENT="GENERAL">
+<META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+<LINK REL="StyleSheet" HREF="style.css" TYPE="text/css">
+
+
+
+
+<style type="text/css">
+<!--     A:link      A:visited {text-decoration: none;}	 A:hover {color:"#C0C0C0";}-->
+</style>
+
+<base target="_self">
+
+</head>
+
+<body bgcolor="#000000" vlink=#FFFFFF link=#FFFFFF text="#C0C0C0" face="verdana" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<CENTER><FONT size=5>_NeT_AnGeLs_</FONT> <BR></CENTER>
+<P><FONT color=#ffffff size=+1><B>Scripting and Config-Tuning for Wolfenstein : 
+Enemy Territory</B></FONT> 
+<P align=justify>This tutorial is dealing with (hopefully) useful scripts for 
+the Multiplayer Online Game "Wolfenstein : Enemy Territory". Developed by 
+Splashdamage.<BR><BR>Many of the scripts included in this tutorial are not 
+written by myself. They have been collected from various sources all over the 
+internet like Forumposts, websites and the IRC. My part in this was to collect 
+these scripts, writing explanations, more text and to put them into a structure. 
+Yet, some scripts are also written by myself. As much as possible I have 
+mentioned my sources and more links to the topic of scritping for ET at the end 
+of this tutorial. 
+<P align=justify>The tutorial constists of several parts. In the beginning you 
+will find some basic explanations and a little FAQ. Then we move on to useful 
+Scripts,  and a number of various commands, colored names and speech-commands in 
+the end. <BR><BR><B><FONT color=#ffffff size=4><A name=Top>Menu</A></FONT></B> 
+<OL>
+<LI><A href="scripts.htm#1">Basics/FAQ</A> 
+<LI><A href="scripts.htm#2">Volume Script</A> 
+<LI><A href="scripts.htm#3">Stats/Topshots Script</A> 
+<LI><A href="scripts.htm#4">Command-Map Script</A> 
+<LI><A href="scripts.htm#5">Replay-Script</A> 
+<LI><A href="scripts.htm#6">FOV Field Of Vision-Script</A> 
+<LI><A href="scripts.htm#7">FOV Alternative Field Of Vision- Script</A> 
+<LI><A href="scripts.htm#8">Near/Far Toggle-Script</A> 
+<LI><A href="scripts.htm#9">Spawnpoint Script</A> 
+<LI><A href="scripts.htm#10">Class &amp; Weapon Selection-Script</A> 
+<LI><A href="scripts.htm#11">Namechange-Script</A> 
+<LI><A href="scripts.htm#12">Direct Support Fire Script (only for Field Ops)</A> 
+<LI><A href="scripts.htm#13">Weapon Hide or Show your Main Weapon Script</A> 
+<LI><A href="scripts.htm#14">Binocular-Script</A> 
+<LI><A href="scripts.htm#15">Sniper-Script</A> 
+<LI><A href="scripts.htm#16">Script to stay crouched</A> 
+<LI><A href="scripts.htm#17">Chat Toggle</A> 
+<LI><A href="scripts.htm#18">Suicide-Script</A> 
+<LI><A href="scripts.htm#19">Zoom Mini map in/out</A> 
+<LI><A href="scripts.htm#20">Atmospheric Effects Toggle</A> </LI></OL>
+<P><B><FONT color=#ff8080 size=+2><A name=1>Basics / FAQ</A></FONT></B> 
+<P><B><FONT color=#ffffff>Question :</FONT></B> What is a config ? <BR><B><FONT 
+color=#ffffff>Answer :</FONT></B> A config is a .cfg file. It includes commands 
+and settings that can be executed by ET.<BR>ET is automatically creating a 
+config for every player-profile that you create, but we will use an additional 
+config.</P>
+<P align=justify><B><FONT color=#ffffff>Question :</FONT></B> Which tool is used 
+to modify a config-file ?<BR><B><FONT color=#ffffff>Answer :</FONT></B> You may 
+simply use WordPad or The Editor, both tools are already included in any 
+standard Windows Installation.</P>
+<P align=justify><FONT color=#ffffff><B>Question </B>:</FONT> Which config-file 
+has to be modified ?<BR><B><FONT color=#ffffff>Answer :</FONT></B> Using WordPad 
+or the Editor you create a file in your etmain folder. Simply open WordPad / 
+Editor and save an empty file with the name of autoexec.cfg to this folder 
+:<BR><FONT color=#ff0000>c:\Program Files\Wolfenstein - Enemy 
+Territory\etmain\autoexec.cfg</FONT><BR>Make sure you don´t save the file as a 
+"text" file, the ending .cfg has to be correct.<BR>It`s ok that this file is 
+empty in the beginning, it`s gonna be filled later with scripts and commands as 
+you advance in this tutorial.</P>
+<P align=justify><B><FONT color=#ffffff>Questions :</FONT></B> How do these 
+scripts and commands get activated in a ET-Game ?<BR><B><FONT 
+color=#ffffff>Answer :</FONT></B> Enemy Territory (ET) is autmatically executing 
+all commands in such an autoexec.cfg file in your etmain folder. <BR>There is 
+also the possibility to manually execute .cfg files. While ET is running, open 
+the console and type :<BR>/exec NameOfConfigFile.cfg<BR>Some settings get 
+activated directly, other after a map-reload (when running config-files 
+manually)</P>
+<P align=justify><B><FONT color=#ffffff>Question :</FONT></B> How large may a 
+config-file be ?<BR><B><FONT color=#ffffff>Answer :</FONT></B> It should not be 
+larger than 16 kb. If your autoexec.cfg tends to be larger than this, create 
+several .cfg files with differen names. Add a line to your autoexec.cfg 
+saying<BR>exec NameOfOtherConfigFile.cfg</P>
+<P align=justify><B><FONT color=#ffffff>Question :</FONT></B> How are all these 
+Keys on my Keyboard called that can be used to bind a command to them 
+?<BR><B><FONT color=#ffffff>Answer :</FONT></B> Check out this picture, it 
+should be self-explanationary :<BR><A href="https://www.net-clan.com/WolfWeb/KeyBoared.jpg" target=_blank><IMG 
+height=130 src="Tastatur_t.gif" width=520 border=0></A> </P>
+<P align=justify><B><FONT color=#ffffff>Question :</FONT></B> How can I use all 
+the many buttons of a Logitech Mouse (like the MX500) ?<BR><B><FONT 
+color=#ffffff>Answer :</FONT></B> You must have Mouseware 9.76 installed (or a 
+higher version).<BR>If this is not enough, you may install a little patch from 
+Loitech, here you find the download-link 
+:<BR>http://www.game-foundation.com/files/logitech_mousebuttons_games.zip<BR>ET 
+will recognise the Mousebuttons if you bind a mouse-button to a key like "F12" 
+or "DEL" using your Logitech-Mouseware.<BR>I am not going to answer any further 
+questions related to Mouses, please call the hotline of the Company that built 
+your mouse or use google to find any further answers :)</P>
+<P align=justify><FONT color=#ffffff><B>Question</B></FONT><B><FONT 
+color=#ffffff> :</FONT></B> How can I undo a setting that I changed in my 
+config-file ?<BR><B><FONT color=#ffffff>Answer :</FONT></B> It is not enough to 
+just erase this setting from your config. Instead, you must put the 
+standard-value for the certain option you want to have changed back. You can 
+find out about the standard setting by using the console in ET.<BR>For example 
+if you wanna find out the current value for r_subdivisions and the standard 
+value, go ahead like this :<BR>Open the console and type 
+:<BR>/r_subdivisions<BR>Then, you will see the value that r_subdivisions has at 
+the moment and also the standard value for it.</P>
+<P align=justify><A href="scripts.htm#Top">Back to top</A> </P>
+<P><FONT color=#ffffff size=5><B>Some basic explanations and 
+definitions</B></FONT></P>
+<P>If you just wanna use some scripts without understanding them on a deeper 
+level, just go ahead and continue with the "Useful Scripts" section, and leave 
+this part here out.</P>
+<P><FONT color=#ffffff>set, sets, seta</FONT> are basically doing the same, they 
+are defining a value for avariable.</P>
+<P><FONT color=#ffffff><B>FPS</B> </FONT>- "Frames Per Second". If ET has 50 FPS 
+on your computer, the computer is able to put out a new picture of the 
+ingame-graphics 50 times per second. Some people say that 25 FPS means that the 
+graphics are fluently and smooth since "a TV picture also consists of 25 Frames 
+Per Second". It is true, a TV picture is created by 25 single pictures per 
+second. But technically it is projected to the screen in another way than a 3D 
+Computer Game. From 50 FPS onwards, imo you can talk about a fluent gaming 
+experience in a 3D shooter. The more the better ;)</P>
+<P><B><FONT color=#ffffff>Script</FONT></B> - A script consists of a number of 
+commands that could also be used separately. In a script, for example it is 
+defined that pressing a certain button causes several actions in the game, for 
+example this makes it much easier to chose another class you want to spawn in 
+and so on.</P>
+<P><FONT color=#ffffff><B>B</B></FONT><B><FONT color=#ffffff>ind</FONT></B> - 
+with the bind command, an action can be bind to a specific key, just like you 
+define for example that by pressing Mousebutton 1 you shoot your gun in the 
+normal options menu. In the scripts I mention later on, you will have to replace 
+the "X" with a key that you prefer.</P>
+<P><B><FONT color=#ffffff>Unbind</FONT></B> - a command to unbind a key. Do so 
+by using the console in ET and typing in :<BR>/unbind X<BR>(use any other button 
+instead of "X")</P>
+<P><B><FONT color=#ffffff>Toggle</FONT></B> - with a toggle usually a switch 
+between two values for a variable is bind to a key.</P>
+<P><A href="scripts.htm#Top">Back to top</A> <STRONG><FONT color=#ff8080 
+size=+2><BR><BR>Useful Scripts</FONT></STRONG></P>
+<P>Simply copy/paste the script you want to use to your autoexec.cfg and change 
+the keybindings to suit your needs. 
+<P><B><FONT color=#ffffff><A name=2>Volume Script</A></FONT></B> <BR>With this 
+volume-script you bind 2 keys that increase / decrease the volume during the 
+game. <BR>// <BR>// Volume-Script <BR>// <BR>bind "." "vstr volup"<BR>bind "," 
+"vstr voldown"<BR>set vol00 "set s_volume 0.0;set voldown vstr vol00;set volup 
+vstr vol01;echo Volume ^oO^0=========="<BR>set vol01 "set s_volume 0.1;set 
+voldown vstr vol00;set volup vstr vol02;echo Volume ^0=^oO^0========="<BR>set 
+vol02 "set s_volume 0.2;set voldown vstr vol01;set volup vstr vol03;echo Volume 
+^0==^oO^0========"<BR>set vol03 "set s_volume 0.3;set voldown vstr vol02;set 
+volup vstr vol04;echo Volume ^0===^oO^0======="<BR>set vol04 "set s_volume 
+0.4;set voldown vstr vol03;set volup vstr vol05;echo Volume 
+^0====^oO^0======"<BR>set vol05 "set s_volume 0.5;set voldown vstr vol04;set 
+volup vstr vol06;echo Volume ^0=====^oO^0====="<BR>set vol06 "set s_volume 
+0.6;set voldown vstr vol05;set volup vstr vol07;echo Volume 
+^0======^oO^0===="<BR>set vol07 "set s_volume 0.7;set voldown vstr vol06;set 
+volup vstr vol08;echo Volume ^0=======^oO^0==="<BR>set vol08 "set s_volume 
+0.8;set voldown vstr vol07;set volup vstr vol09;echo Volume 
+^0========^oO^0=="<BR>set vol09 "set s_volume 0.9;set voldown vstr vol08;set 
+volup vstr vol10;echo Volume ^0=========^oO^0="<BR>set vol10 "set s_volume 
+1.0;set voldown vstr vol09;set volup vstr vol10;echo Volume 
+^0==========^oO^0"<BR>set volup vstr vol05<BR>set voldown vstr vol05<BR>//<BR><A 
+href="scripts.htm#Top">Back to top</A> <BR><BR><B><FONT color=#ffffff><A 
+name=3>Stats/Topshots Script</A></FONT></B><BR>By pressing a key, you can see 
+your stats and your topshots at the same time. They stay on the screen until 
+that key is pressed once again.<BR>//<BR>// Stats &amp; Topshots 
+Script<BR>//<BR>bind "X" "vstr statisticsall"<BR>set statisticsall "vstr 
+statistics"<BR>set statistics "+topshots;+stats;set statisticsall vstr 
+statistics2"<BR>set statistics2 "-topshots;-stats;set statisticsall vstr 
+statistics"<BR>//<BR><A href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A name=4>Command-Map 
+Script</A></FONT></B><BR>Displays the command-map until the key is pressed 
+again.<BR>//<BR>//Command map script<BR>//<BR>bind "X" "vstr map"<BR>set mapout 
+"+mapexpand; set map vstr mapin"<BR>set mapin "-mapexpand; set map vstr 
+mapout"<BR>set map "vstr mapout"<BR>//<BR><A href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A 
+name=5>Replay-Script</A></FONT></B><BR>stops/starts a replay-recording by 
+pressind a key. First key press Starts replay recording.<BR>//<BR>// 
+Replay-Script<BR>//<BR>bind "F12" "vstr demotoggle"<BR>set demostart "set 
+demotoggle vstr demostop; autorecord; echo ^0Record ^oON"<BR>set demostop "set 
+demotoggle vstr demostart; stoprecord; echo ^0Record ^oOFF"<BR>set demotoggle 
+"vstr demostop"<BR>//<BR><A href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A name=6>Field Of 
+Vision-Script</A></FONT></B><BR>With 2 keys you can increase and decrease your 
+fov between a value of 90 and 120 degrees.<BR>A fov of 120 is usually the highst 
+that leagues and tournaments allow the players to use.<BR>//<BR>// 
+fov-Script<BR>//<BR>bind "X" "vstr fdn"<BR>bind "T" "vstr fup"<BR>set fdn vstr 
+fov90<BR>set fup vstr fov95<BR>set fov90 "cg_fov 90;set fdn vstr fov90;set fup 
+vstr fov95;echo fov 90"<BR>set fov95 "cg_fov 95;set fdn vstr fov90;set fup vstr 
+fov100;echo fov 95"<BR>set fov100 "cg_fov 100;set fdn vstr fov95;set fup vstr 
+fov105;echo fov 100"<BR>set fov105 "cg_fov 105;set fdn vstr fov100;set fup vstr 
+fov110;echo fov 105"<BR>set fov110 "cg_fov 110;set fdn vstr fov105;set fup vstr 
+fov115;echo fov 110"<BR>set fov115 "cg_fov 115;set fdn vstr fov110;set fup vstr 
+fov120;echo fov 115"<BR>set fov120 "cg_fov 120;set fdn vstr fov115;set fup vstr 
+fov125;echo fov 120"<BR>//<BR><A href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A name=7>Alternative Field Of Vision- 
+Script</A></FONT></B><BR>Using the cycle command, you can switch the fov from 90 
+to 120 in steps of 5 degrees. <BR>You cannot decrease the fov with this script, 
+but it starts with 90 again after you reach 120.<BR>//<BR>// alternatives 
+fov-Script<BR>//<BR>bind "X" "cycle fov 90 120 5"<BR>//<BR><A href="scripts.htm#Top">Back 
+to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A name=8>Near/Far 
+Toggle-Script</A></FONT></B><BR>For a long range shooting players often use 
+different settings than in a close-up infight.<BR>This script sets different 
+values for your crosshair, fov, crosshairsize and your mouse-sensitivity.<BR>By 
+pressing the key that you bind the script to, you can switch between the 
+settings for long distance shootings and close up infights. <BR>Please note that 
+you will have to customise the settings so that they suit you. The values 
+included here are just meant to give an example of what the script is 
+about.<BR>//<BR>// Near/Far Toggle-Script<BR>//<BR>bind "X" "vstr 
+crosssensitoggle"<BR>set far "set crosssensitoggle vstr far;cg_fov 
+90;cg_drawcrosshair 5;cg_crosshairsize 50;sensitivity 2.5"<BR>set near "set 
+crosssensitoggle vstr near;cg_fov 105;cg_drawcrosshair 9;cg_crosshairsize 
+70;sensitivity 4.5"<BR>set crosssensitoggle "vstr near"<BR>//<BR><A 
+href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A name=9>Spawnpoint 
+Script</A></FONT></B><BR>This script uses 12 more little config-files. Download 
+them and unzip them into your etmain folder : <BR><A style="COLOR: #cccccc" 
+href="http://www.net-clan.com/WolfWeb/spawn_script.zip" 
+target=_blank>http://www.net-clan.com/WolfWeb/spawn_script.zip</A><BR>By 
+pressing the defined keys you can select the map and the side (Axis or Allies) 
+you are playing currently.<BR>After that you use another defined key to select 
+the spawnpoint where you wanna spawn.<BR>Standard-Key for selecting the 
+spawnpoint is "o" thats next to P. You must change that key in each of the 12 
+config-files to choose another key that suits you.<BR>The main part of this 
+script as seen below has to be copied into your autoexec.cfg .<BR>//<BR>// 
+Spawnpoint-Script (there are 12 more config-files that go along with this script 
+!)<BR>//<BR>bind "i" "vstr maptoggle"<BR>SET maptoggle "vstr maptoggle1"<BR>SET 
+maptoggle1 "exec al_radar.cfg; set maptoggle vstr maptoggle2"<BR>SET maptoggle2 
+"exec al_rail_gun.cfg; set maptoggle vstr maptoggle3"<BR>SET maptoggle3 "exec 
+al_fuel_dump.cfg; set maptoggle vstr maptoggle4"<BR>SET maptoggle4 "exec 
+al_oasis.cfg; set maptoggle vstr maptoggle5"<BR>SET maptoggle5 "exec 
+al_battery.cfg; set maptoggle vstr maptoggle6"<BR>SET maptoggle6 "exec 
+al_gold_rush.cfg; set maptoggle vstr maptoggle7"<BR>SET maptoggle7 "exec 
+ax_radar.cfg; set maptoggle vstr maptoggle8"<BR>SET maptoggle8 "exec 
+ax_rail_gun.cfg; set maptoggle vstr maptoggle9"<BR>SET maptoggle9 "exec 
+ax_fuel_dump.cfg; set maptoggle vstr maptoggle10"<BR>SET maptoggle10 "exec 
+ax_oasis.cfg; set maptoggle vstr maptoggle11"<BR>SET maptoggle11 "exec 
+ax_battery.cfg; set maptoggle vstr maptoggle12"<BR>SET maptoggle12 "exec 
+ax_gold_rush.cfg; set maptoggle vstr maptoggle1"<BR>//<BR><A href="scripts.htm#Top">Back to 
+top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A name=10>Class &amp; Weapon 
+Selection-Script</A></FONT></B><BR>This script is done by <A 
+style="COLOR: #cccccc" href="http://www.cowboyscripts.org" 
+target=_blank>www.cowboyscripts.org</A> and has just been modified a little bit 
+by me since the spawnpoint toggle that was originally included is not as 
+comfortable as the one in the script above.<BR>Since this script here is rather 
+long, you should save it in an extra config-file and add the line to your 
+autoexec.cfg:<BR>//<BR>exec NameOfExtraConfig.cfg<BR>//<BR>In the User-Section 
+of this Script there are altogether 10 keys defined so choose them carefully 
+:)<BR>Attention : Before entering the game in a certain class, you must alway 
+chose a side (Axis or Allies) which you want to play !<BR>//<BR>// Class &amp; 
+Weapon Section-Script<BR>//<BR>// ################################<BR>// ##### 
+BEGIN USER SETTINGS SECTION #####<BR>// 
+################################<BR>//<BR>set quick_pick "vstr 
+br_medic1"<BR>//<BR>// BINDS<BR>//<BR>set do_bind_quick_pick "bind X vstr 
+quick_pick"<BR>set do_bind_sayclass "bind X vstr say_class"<BR>set 
+do_bind_team_allies "bind X vstr set_team_b"<BR>set do_bind_team_axis "bind X 
+vstr set_team_r"<BR>set do_bind_team_spec "bind X vstr set_team_s"<BR>//<BR>set 
+do_bind_class_select "bind X vstr br_covert; bind X vstr br_soldier; bind X vstr 
+br_fldops; bind X vstr br_eng; bind X vstr br_medic"<BR>//<BR>// 
+#######################################<BR>// ##### END USER SETTINGS SECTION 
+#####<BR>// #######################################<BR>//<BR>// TEAM SAY &amp; 
+SELECTION<BR>//<BR>set teamed_true "set spawncycle "vstr set_spawn0"; set 
+spawnreset "vstr set_spawn0"; vstr spawncycle; vstr set_class; vstr say_class; 
+vstr reset_cyclers"<BR>set teamed_false "set spawncycle "vstr spawncycle_s"; set 
+spawnreset "vstr spawncycle_s"; set set_class "vstr set_class_s"; set say_class 
+"vstr say_class_s"; set say_spawn "vstr say_spawn_s"; vstr reset_cyclers"</P>
+<P align=justify>set set_team_b "echo ^4[^7Allies^4]; set set_class "vstr 
+set_class_b"; set say_class "vstr b_class_say"; vstr teamed_true"<BR>set 
+set_team_r "echo ^1[^7Axis^1]; set set_class "vstr set_class_r"; set say_class 
+"vstr r_class_say"; vstr teamed_true"</P>
+<P align=justify>set set_team_s "echo ^2[^7Spectator^2]; vstr teamed_false; team 
+s"</P>
+<P align=justify>set set_class_s "vstr play_sound; vstr b_class_echo"<BR>set 
+set_class_b "vstr play_sound; vstr b_team; vstr b_class_echo"<BR>set set_class_r 
+"vstr play_sound; vstr r_team; vstr r_class_echo"</P>
+<P align=justify>set say_class_s "echo You need to ^3choose a team^7 before your 
+class can be announced!"<BR>//<BR>// CYCLE THRU CLASSES &amp; 
+LOADOUTS<BR>//<BR>set br_covert1 "vstr b_covert1; vstr r_covert1; vstr 
+set_class; vstr reset_cyclers; set br_covert "vstr br_covert2""<BR>set 
+br_covert2 "vstr b_covert2; vstr r_covert2; vstr set_class; vstr reset_cyclers; 
+set br_covert "vstr br_covert3""<BR>set br_covert3 "vstr b_covert3; vstr 
+r_covert3; vstr set_class; vstr reset_cyclers; set br_covert "vstr 
+br_covert1""</P>
+<P align=justify>set br_soldier1 "vstr b_soldier1; vstr r_soldier1; vstr 
+set_class; vstr reset_cyclers; set br_soldier "vstr br_soldier2""<BR>set 
+br_soldier2 "vstr b_soldier2; vstr r_soldier2; vstr set_class; vstr 
+reset_cyclers; set br_soldier "vstr br_soldier3""<BR>set br_soldier3 "vstr 
+b_soldier3; vstr r_soldier3; vstr set_class; vstr reset_cyclers; set br_soldier 
+"vstr br_soldier4""<BR>set br_soldier4 "vstr b_soldier4; vstr r_soldier4; vstr 
+set_class; vstr reset_cyclers; set br_soldier "vstr br_soldier1""</P>
+<P align=justify>set br_fldops1 "vstr b_fldops1; vstr r_fldops1; vstr set_class; 
+vstr reset_cyclers"</P>
+<P align=justify>set br_eng1 "vstr b_eng1; vstr r_eng1; vstr set_class; vstr 
+reset_cyclers; set br_eng "vstr br_eng2""<BR>set br_eng2 "vstr b_eng2; vstr 
+r_eng2; vstr set_class; vstr reset_cyclers; set br_eng "vstr br_eng1""</P>
+<P align=justify>set br_medic1 "vstr b_medic1; vstr r_medic1; vstr set_class; 
+vstr reset_cyclers"</P>
+<P align=justify>set reset_cyclers "set br_covert "vstr br_covert1"; set 
+br_soldier "vstr br_soldier1"; set br_fldops "vstr br_fldops1"; set br_eng "vstr 
+<BR>br_eng1"; set br_medic "vstr br_medic1""<BR>//<BR>// SET B (ALLIES) TEAM 
+CLASS &amp; LOADOUT<BR>//<BR>set b_covert1 "set b_team "team b 4 10"; set 
+b_class_echo "echo ^5Covert Ops ^7with ^3Sten"; set b_class_say "say_team 
+^5Covert Ops ^7with ^3Sten""<BR>set b_covert2 "set b_team "team b 4 33"; set 
+b_class_echo "echo ^5Covert Ops ^7with ^3FG42"; set b_class_say "say_team 
+^5Covert Ops ^7with ^3FG42""<BR>set b_covert3 "set b_team "team b 4 25"; set 
+b_class_echo "echo ^5Covert Ops ^7with ^3K43"; set b_class_say "say_team 
+^5Covert Ops ^7with ^3K43""</P>
+<P align=justify>set b_soldier1 "set b_team "team b 0 31"; set b_class_echo 
+"echo ^2Soldier ^7with ^3MG42"; set b_class_say "say_team ^2Soldier ^7with 
+^3MG42""<BR>set b_soldier2 "set b_team "team b 0 6"; set b_class_echo "echo 
+^2Soldier ^7with ^3Flamethrower"; set b_class_say "say_team ^2Soldier ^7with 
+^3Flamethrower""<BR>set b_soldier3 "set b_team "team b 0 5"; set b_class_echo 
+"echo ^2Soldier ^7with ^3Panzerfaust"; set b_class_say "say_team ^2Soldier 
+^7with ^3Panzerfaust""<BR>set b_soldier4 "set b_team "team b 0 35"; set 
+b_class_echo "echo ^2Soldier ^7with ^3Mortar"; set b_class_say "say_team 
+^2Soldier ^7with ^3Mortar""</P>
+<P align=justify>set b_fldops1 "set b_team "team b 3 8"; set b_class_echo "echo 
+^8Field Ops ^7with ^3Thompson"; set b_class_say "say_team ^8Field Ops ^7with 
+^3Thompson""</P>
+<P align=justify>set b_eng1 "set b_team "team b 2 8"; set b_class_echo "echo 
+^6Engineer ^7with ^3Thompson"; set b_class_say "say_team ^6Engineer ^7with 
+^3Thompson""<BR>set b_eng2 "set b_team "team b 2 24"; set b_class_echo "echo 
+^6Engineer ^7with ^3M1 Garand"; set b_class_say "say_team ^6Engineer ^7with ^3M1 
+Garand""</P>
+<P align=justify>set b_medic1 "set b_team "team b 1 8"; set b_class_echo "echo 
+^1Medic ^7with ^3Thompson"; set b_class_say "say_team ^1Medic ^7with 
+^3Thompson""<BR>//<BR>// SET R (AXIS) TEAM CLASS &amp; LOADOUT<BR>//<BR>set 
+r_covert1 "set r_team "team r 4 10"; set r_class_echo "echo ^5Covert Ops ^7with 
+^3Sten"; set r_class_say "say_team ^5Covert Ops ^7with ^3Sten""<BR>set r_covert2 
+"set r_team "team r 4 33"; set r_class_echo "echo ^5Covert Ops ^7with ^3FG42"; 
+set r_class_say "say_team ^5Covert Ops ^7with ^3FG42""<BR>set r_covert3 "set 
+r_team "team r 4 32"; set r_class_echo "echo ^5Covert Ops ^7with ^3K43"; set 
+r_class_say "say_team ^5Covert Ops ^7with ^3K43""</P>
+<P align=justify>set r_soldier1 "set r_team "team r 0 31"; set r_class_echo 
+"echo ^2Soldier ^7with ^3MG42"; set r_class_say "say_team ^2Soldier ^7with 
+^3MG42""<BR>set r_soldier2 "set r_team "team r 0 6"; set r_class_echo "echo 
+^2Soldier ^7with ^3Flamethrower"; set r_class_say "say_team ^2Soldier ^7with 
+^3Flamethrower""<BR>set r_soldier3 "set r_team "team r 0 5"; set r_class_echo 
+"echo ^2Soldier ^7with ^3Panzerfaust"; set r_class_say "say_team ^2Soldier 
+<BR>^7with ^3Panzerfaust""<BR>set r_soldier4 "set r_team "team r 0 35"; set 
+r_class_echo "echo ^2Soldier ^7with ^3Mortar"; set r_class_say "say_team 
+^2Soldier ^7with ^3Mortar""</P>
+<P align=justify>set r_fldops1 "set r_team "team r 3 3"; set r_class_echo "echo 
+^8Field Ops ^7with ^3MP 40"; set r_class_say "say_team ^8Field Ops ^7with ^3MP 
+40""</P>
+<P align=justify>set r_eng1 "set r_team "team r 2 3"; set r_class_echo "echo 
+^6Engineer ^7with ^3MP 40"; set r_class_say "say_team ^6Engineer ^7with ^3MP 
+40""<BR>set r_eng2 "set r_team "team r 2 23"; set r_class_echo "echo ^6Engineer 
+^7with ^3K43"; set r_class_say "say_team ^6Engineer ^7with ^3K43""</P>
+<P align=justify>set r_medic1 "set r_team "team r 1 3"; set r_class_echo "echo 
+^1Medic ^7with ^3MP 40"; set r_class_say "say_team ^1Medic ^7with ^3MP 
+40""<BR>//<BR>// INIT CLASS CYCLERS, BINDS, DEFAULT LOADOUT<BR>//<BR>vstr 
+teamed_false<BR>vstr do_bind_sayclass<BR>vstr do_bind_quick_pick<BR>vstr 
+do_bind_team_allies<BR>vstr do_bind_team_axis<BR>vstr do_bind_team_spec<BR>vstr 
+do_bind_class_select<BR>vstr do_bind_spawncycle<BR>vstr 
+do_bind_spawnreset<BR>vstr do_bind_sayspawn<BR>echo "Choosing Quick-Pick 
+Loadout:"<BR>vstr quick_pick<BR>echo "^5Super^7-^5ET^7-^5Selector^7 ^51^7.^51^7 
+by ^3]CkB[^6Cowboy^7 <BR>loaded!"<BR>//<BR>//This is the end of the Class &amp; 
+Weapon Selection-Script<BR>//<BR><A href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A 
+name=11>Namechange-Script</A></FONT></B><BR>By using this script you can switch 
+through 3 self-defined playernames.<BR>Normal Namescripts like in Q3 or RTCW 
+have alittle bug in ET so that no capital letters can be used. So this script is 
+a little less elegant but at least it works :)<BR>Please create 3 extra 
+config-files entitled name1.cfg, name2.cfg ans name3.cfg in your etmain folder 
+and insert the line<BR>seta name "MyNameVariation1"<BR>to name1.cfg and <BR>seta 
+name "MyNameVariation2" <BR>in the name2.cfg and<BR>seta name 
+"MyNameVariation3"<BR>to name3.cfg <BR>Choose names you prefer and course you 
+may use the color codes that are mentioned later on in this 
+tutorial.<BR><BR>//<BR>// Namechange-Script<BR>//<BR>bind "X" "vstr 
+namechange"<BR>set name1 "exec name1.cfg; set namechange vstr name2"<BR>set 
+name2 "exec name2.cfg; set namechange vstr name3"<BR>set name3 "exec name3.cfg; 
+set namechange vstr name1"<BR>set namechange "vstr name1"<BR>//<BR><A 
+href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A name=12>Direct Support Fire Script 
+(only for Field Ops)</A></FONT></B><BR>With this script, a Field Ops requests a 
+support fire by pressing the defined key. It happens quite quick, so be sure 
+that you have your crosshair pointing directly on your target since there is no 
+phase anymore where you can choose a target through your 
+binoculars.<BR><BR>//<BR>// Direct Support Fire Script (only for für Field 
+Ops)<BR>//<BR>bind "X" "+zoom;+attack;-attack;-zoom"<BR>//<BR><A 
+href="scripts.htm#Top">Back to top</A> <BR><BR><B><FONT color=#ffffff><A name=13>Hide or 
+Show your Main Weapon Script</A></FONT></B><BR><BR>// Hide or Show you Main 
+Weapon Script <BR>// <BR>set Guntog1 "cg_drawgun 0; set Guntog vstr Guntog2; 
+echo ^0Gun Skin ^oOFF" <BR>set Guntog2 "cg_drawgun 1; set Guntog vstr Guntog1; 
+echo ^0Gun Skin ^oON" <BR>set Guntog "vstr Guntog2" <BR>bind T "vstr 
+Guntog"<BR><A href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A 
+name=14>Binocular-Script</A></FONT></B><BR>With this script you can switch to 
+binocular-sight and you only leave this sight again when the key is pressed 
+again. <BR>//<BR>// Binocular-Script<BR>//<BR>bind "X" "vstr binocular"<BR>set 
+bino_on "+zoom; set binocular vstr bino_off"<BR>set bino_off "-zoom; set 
+binocular vstr bino_on"<BR>set binocular "vstr bino_on"<BR>//<BR><A 
+href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><B><FONT color=#ffffff><A 
+name=15>Sniper-Script</A></FONT></B><BR>This script is for lazy snipers that 
+want to press one key to crouch and change to the zoom of the sniper. Press the 
+key again to stand up and switch to normal sight.<BR>//<BR>// Sniper-Script 
+<BR>//<BR>bind "X" "vstr nextsnipecrouchtoggle"<BR>set snipecrouch "+movedown; 
+weapalt; set nextsnipecrouchtoggle vstr <BR>snipestand"<BR>set snipestand 
+"-movedown; weapalt; set nextsnipecrouchtoggle vstr snipecrouch"<BR>set 
+nextsnipecrouchtoggle "vstr snipecrouch"<BR>//<BR><A href="scripts.htm#Top">Back to top</A> 
+
+<P align=justify><B><FONT color=#ffffff><A name=16>Script to stay 
+crouched</A></FONT></B><BR>With this script a player can croch and stay like 
+this until the key is pressed again.<BR>//<BR>// Script to stay 
+crouched<BR>//<BR>bind "X" "vstr crouchswitch<BR>set duck "+movedown; set 
+crouchswitch vstr stand"<BR>set stand "-movedown; set crouchswitch vstr 
+duck"<BR>set crouchswitch "vstr duck"<BR>//<BR><A href="scripts.htm#Top">Back to top</A> 
+</P>
+<P align=justify><B><FONT color=#ffffff><A 
+name=17>Chat-Toggle</A></FONT></B><BR>By pressing a key, you can switch off all 
+global chat.<BR>Switch everything back to normal by pressing the button 
+again.<BR>//<BR>// Teamchat-Toggle<BR>//<BR>bind "X" "toggle 
+cg_teamchatonly"<BR>//<BR><A href="scripts.htm#Top">Back to top</A></P>
+<P align=justify><B><FONT color=#ffffff><A 
+name=18>Suicide-Script</A></FONT></B><BR>Not really a script but very useful : 
+By pressing a key you commit suicide to be able to spawn in another class for 
+example.<BR>//<BR>// Suicide-Script<BR>//<BR>bind "X" "kill"<BR>//<BR><A 
+href="scripts.htm#Top">Back to top</A>
+<P align=justify><B><FONT color=#ffffff><A name=#19>Zoom Mini map 
+in/out</A></FONT></B> <BR>  
+<UL>
+<LI>bind x "mapzoomin" //zooms compass map in 
+<LI>bind z "mapzoomout" //zooms compass map out 
+<P>  
+<TABLE>
+<TBODY>
+<TR>
+<TD><IMG height=250 
+alt="Image temporarily taken down - bandwidth getting overwhelmed" 
+src="default.jpg" width=250></TD>
+<TD><IMG height=250 
+alt="Image temporarily taken down - bandwidth getting overwhelmed" 
+src="zoomin.jpg" width=250 ?></TD>
+<TD><IMG height=250 
+alt="Image temporarily taken down - bandwidth getting overwhelmed" 
+src="zoomout.jpg" width=250></TD></TR>
+<TR>
+<TD>Default level of detail</TD>
+<TD>zoomed in 2X clicks</TD>
+<TD>Zoomed out 2X clicks</TD></TR></TBODY></TABLE></P></LI></UL>
+<P align=justify><A href="scripts.htm#Top">Back to top</A> </P>
+<P align=justify><FONT color=#ffffff><B><A name=#20>Atmospheric Effects 
+Toggle</A></B></FONT><BR><BR>// Atmospheric Effects Toggle <BR>// 
+--------------------------------------- <BR>set atmtog1 "cg_atmosphericeffects 
+0; set atmtog vstr atmtog2; echo ^0Atmospheric Effects ^oOFF" <BR>set atmtog2 
+"cg_atmosphericeffects 1; set atmtog vstr atmtog1; echo ^0Atmospheric Effects 
+^oON" <BR>set atmtog "vstr atmtog2" <BR>bind X "vstr atmtog"</P>
+<P align=justify><A href="scripts.htm#Top">Back to top</A> <BR> </P>
+<P align=justify><B><FONT color=#ff8080 size=+2>Network Settings &amp; 
+more</FONT></B></P>
+<P align=justify>seta com_hunkmegs "Wert" // defines how much RAm your PC 
+reserves for ET. If you have 512 mb RAM, you can safely choose a value of 
+200.<BR>seta com_soundmegs "Wert" // defines, how much RAM your PC reserves for 
+the sound of ET, 32 is ok if you have 512 mb RAM<BR>seta cl_timenudge "Wert" // 
+default is "0" . Negative values are used to simulate lesserpings, but if you go 
+too low you start lagging and see your opponents move no longer smoothly. Some 
+leagues don´t allow negative values at all, some up to -20. Positive values 
+don´t make sense at all, btw.<BR>seta cl_allowdownload "1/0" // defines if you 
+get files from the server if your client doesn´t have them (custom maps for 
+example). default and recommended is "1". if The server wants to send you maps 
+that are not running on it at the moment, try to set this to "0" and reconnect, 
+sometimes this helps.</P>
+<P align=justify><FONT color=#ffffff>Network-Settings for Modem-Users 
+(56k)</FONT><BR>seta cl_maxpackets "30"<BR>seta snaps "20"<BR>seta rate 
+"5000"</P>
+<P align=justify><FONT color=#ffffff>Network Settings for ISDN 
+Users</FONT><BR>seta cl_maxpackets "60<BR>seta snaps "40"<BR>seta rate 
+"7000"</P>
+<P align=justify><FONT color=#ffffff>Network Settings for DSL, Cable and other 
+broadband connections</FONT><BR>seta cl_maxpackets "60"<BR>seta snaps 
+"40"<BR>seta rate "25000"<BR><A href="scripts.htm#Top">Back to top</A> <BR><BR><FONT 
+color=#ff8080 size=+2>Namesettings and Colors</FONT></P>
+<P align=justify>There is an easy to use program on the download setion that is 
+good or even better than this, if you would prefer to use that....<BR><BR>seta 
+name "blaaaahhhh"<BR>with this command, you define your playername in the game. 
+To add colors to it, use the color-codes below, the always start with ^</P>
+<P align=justify>A colored name would look like this for example :<BR>seta name 
+"^2c^5o^8l^ko^pr^he^1d ^7Noob"</P>
+<P align=justify><IMG height=55 src="Colors.jpg" width=947 border=0><BR> </P>
+<P align=justify><BR><STRONG><FONT color=#ff8080 
+size=+2>Speech-Commands</FONT></STRONG></P>
+<P align=justify>There is the possiblity to bind all the speech-commands from 
+the quickchat menu to a key.<BR>Many players use this to have even faster access 
+to certain speech-commdands.<BR>There are 3 possiblities : speech can be heard 
+by all players on the server or only by your Teammates.</P>
+<P align=justify><FONT color=#ffffff>Speech-Command to all people on the server 
+</FONT>:<BR>//<BR>bind "X" "vsay Sorry" // As an example, this will give out 
+"Sorry"<BR>//</P>
+<P align=justify><FONT color=#ffffff>Speech-Command to all players in your team 
+</FONT>:<BR>//<BR>bind "X" "vsay_team NeedEngineer" // As an example, this will 
+give out "We need an Engineer"<BR>//</P>
+<P align=justify>PathCleared "Path cleared."<BR>EnemyWeak "The enemy is 
+weakened."<BR>AllClear "All clear."<BR>Incoming "Incoming!"<BR>FireInTheHole 
+"Fire in the hole!"<BR>OnDefense "I'm on defense."<BR>OnOffense "I'm 
+attacking."<BR>TakingFire "Taking fire!"<BR>MinesCleared "Mines 
+cleared."<BR>OnMyWay "On my way."<BR>NeedBackup "I need backup!"<BR>CoverMe 
+"Cover me!"<BR>NeedEngineer "We need an engineer!"<BR>NeedOps "We need Covert 
+Ops!"<BR>Medic "Medic!"<BR>NeedAmmo "I need ammo!"<BR>NeedTarget "I need a 
+target!"<BR>WhereTo "Where to?"<BR>FollowMe "Follow me!"<BR>LetsGo "Let's 
+go!"<BR>Move "Move!"<BR>ClearPath "Clear the path!"<BR>HoldFire "Hold 
+fire!"<BR>DefendObjective "Defend our objective!"<BR>DisarmDynamite "Disarm the 
+dynamite!"<BR>ClearMines "Clear the mines!"<BR>ReinforceDefense "Reinforce the 
+defense!"<BR>ReinforceOffense "Reinforce the offense!"<BR>DestroyPrimary 
+"Destroy the primary objective!"<BR>DestroySecondary "Destroy the secondary 
+objective!"<BR>DestroyConstruction "Destroy the 
+construction!"<BR>ObjectiveDestroyed "Objective destroyed!"<BR>RepairVehicle 
+"Repair the vehicle!"<BR>DestroyVehicle "Destroy the vehicle!"<BR>EscortVehicle 
+"Escort the vehicle!"<BR>FireOnTarget "Fire on my 
+target!"<BR>CommandAcknowledged "Command acknowledged!"<BR>CommandDeclined 
+"Command declined!"<BR>CommandCompleted "Command 
+completed!"<BR>ConstructionCommencing "Construction 
+underway!"<BR>ConstructionCompleted "Construction 
+completed!"<BR>ConstructionDestroyed "Construction 
+destroyed!"<BR>ObjectiveFailed "Objective failed!"<BR>ObjectiveCompleted 
+"Objective completed!"<BR>Affirmative "Yes!"<BR>Negative "No!"<BR>Thanks "Thanks 
+a lot!"<BR>Welcome "You're welcome."<BR>Oops "Oops!"<BR>Sorry "Sorry!"<BR>Hi 
+"Hi!"<BR>Bye "Bye."<BR>Cheer "Yeah!"<BR>GreatShot "Great shot!"<BR>GoodGame 
+"Good game!"<BR>IamSoldier "I'm a soldier."<BR>IamMedic "I'm a 
+medic."<BR>IamEngineer "I'm an engineer."<BR>IamFieldOps "I'm a field 
+ops."<BR>IamCovertOps "I'm a covert ops."<BR>FTMeetWaypoint "Meet at 
+waypoint!"<BR>FTAttackWaypoint "Attack waypoint!"<BR>FTDefendWaypoint "Defend 
+waypoint"<BR>FTAttack "Attack!"<BR>FTFallBack "Fall back!"<BR>FTCoverMe "Cover 
+me!"<BR>FTCoveringFire "Soldier, covering fire!"<BR>FTMortar "Deploy 
+mortar!"<BR>FTHealSquad "Heal the squad!"<BR>FTHealMe "Heal 
+me!"<BR>FTReviveTeamMate "Revive team mate!"<BR>FTReviveMe "Revive 
+me!"<BR>FTDestroyObjective "Destroy objective!"<BR>FTRepairObjective "Repair 
+objective!"<BR>FTConstructObjective "Construct the 
+objective!"<BR>FTDisarmDynamite "Disarm the dynamite!"<BR>FTDeployLandmines 
+"Deploy landmines!"<BR>FTDisarmLandmines "Disarm landmines!"<BR>FTCallAirStrike 
+"Call airstrike!"<BR>FTCallArtillery "Call artillery!"<BR>FTMortarBarrage "Call 
+mortar barrage!"<BR>FTResupplySquad "Resupply squad!"<BR>FTResupplyMe "Resupply 
+me!"<BR>FTExploreArea "Explore area!"<BR>FTExploreAtCoordinates "Explore at 
+co-ordinates!"<BR>FTSatchelObjective "Destroy satchel 
+objective!"<BR>FTInfiltrate "Infiltrate!"<BR>FTGoUndercover "Go 
+undercover!"<BR>FTProvideSniperCover "Provide sniper cover!"<BR><FONT 
+color=#ff8080 size=+2><STRONG><BR>Sources and Links<BR></STRONG></FONT><FONT 
+color=#cccccc><STRONG><A 
+href="http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&amp;forumid=151" 
+target=_blank><BR></A></STRONG>planetwolfenstein.de Forum about Scripting : <A 
+href="http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&amp;forumid=151" 
+target=_blank>http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&amp;forumid=151</A><BR><BR>Wolfenstein 
+4 Dummies : <A href="http://www.rtcwonline.com/dummies/" 
+target=_blank>http://www.rtcwonline.com/dummies/</A><BR><BR>Wolfstah.com, 
+Australiian Wolfenstein Page : <A href="http://www.wolfstah.com" 
+target=_blank>http://www.wolfstah.com</A><BR><BR>Cowboyscripts, (for the 
+superselector) : <A href="http://www.cowboyscripts.org/" 
+target=_blank>http://www.cowboyscripts.org/</A><BR><BR>Elite Force Tweak Guide : 
+<A 
+href="http://mitglied.lycos.de/overbeck1/tweak/elite_force_tweak_guide.htm%20" 
+target=_blank>http://mitglied.lycos.de/overbeck1/tweak/elite_force_tweak_guide.htm 
+</A><BR><BR>High Boys`s Home : <A href="http://wolf.dehn.net/%20" 
+target=_blank>http://wolf.dehn.net/ </A><BR><BR>Keens Q3 Engine Variablen : <A 
+href="http://www.gameadmins.com/modules.php?name=Keen_Guide&amp;op=variables%20" 
+target=_blank>http://www.gameadmins.com/modules.php?name=Keen_Guide&amp;op=variables 
+</A><BR><BR>Cultposting about the FPS and what this does to the DZM you can jump 
+in the Quake 3 engine : : <A 
+href="http://ads.gamespy.com/hserver/SITE=Q3W/TIER=3/GENRE=ACTION/AREA=FORUM/AAMSZ=IAB_FULL_BANNER?unique%20" 
+target=_blank><BR>http://ads.gamespy.com/hserver/SITE=Q3W/TIER=3/GENRE=ACTION/AREA=FORUM/AAMSZ=IAB_FULL_BANNER?unique 
+</A><BR><BR></FONT><BR><FONT color=#ffffff>wolfenstein.ch good scripting forum 
+</FONT><BR><A 
+href="http://www.wolfenstein.ch/forum/board.php?boardid=23&amp;sid=dfc5bed4408752dbcc527e2120e6ef91" 
+target=_blank>http://www.wolfenstein.ch/forum/board.php?boardid=23&amp;sid=dfc5bed4408752dbcc527e2120e6ef91</A><FONT 
+color=#cccccc><BR><BR>target2002 <BR><BR>Brain<BR><BR>Shorty </FONT></P>
+</body>
+</html>
