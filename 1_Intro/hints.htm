@@ -1,0 +1,510 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>_NeT_AnGeLs_ Enemy Territory Clan</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<META NAME="RESOURCE-TYPE" CONTENT="DOCUMENT">
+<META NAME="DISTRIBUTION" CONTENT="GLOBAL">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<META NAME="REVISIT-AFTER" CONTENT="1 DAYS">
+<META NAME="RATING" CONTENT="GENERAL">
+<META NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+<LINK REL="StyleSheet" HREF="style.css" TYPE="text/css">
+
+
+
+
+<style type="text/css">
+<!--     A:link      A:visited {text-decoration: none;}	 A:hover {color:"#C0C0C0";}-->
+</style>
+
+<base target="_self">
+
+</head>
+
+<body bgcolor="#000000" vlink=#FFFFFF link=#FFFFFF text="#C0C0C0" face="verdana" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<center><a name="index"><font size="5">_NeT_AnGeLs_</font></a><br>
+<font color="#ffffff">Enemy Territory Help</font></center>
+<h4><font color="#ffffff">Table of Contents</font></h4>
+<ul>
+  <li><a href="hints.htm#started">Getting Started</a>
+  <li><a href="hints.htm#changes">What's Changed Since Test?</a>
+  <li><a href="hints.htm#limbomenu">New Limbo Menu</a>
+  <li><a href="hints.htm#playerclasses">Player Classes and Equipment Options</a>
+  <li><a href="xp.htm">What's This
+    I Hear About Experience?</a>
+  <li><a href="xp.htm#ranks">How
+    Do Ranks Correspond To Experience?</a>
+  <li><a href="xp.htm#medals">How
+    Are The Medals Awarded At The End Of The Game?</a>
+  <li><a href="xp.htm#match">How
+    Will Server Admins Be Able To Customize The Experience System?</a>
+  <li><a href="map.htm">I'm Lost On The
+    Maps. Is There A Map Overview I Can Read?</a>
+  <li><a href="maps.htm">Need some
+    Help/Tips on each of the 6 maps?</a>
+  <li><a href="hints.htm#weaponscript">How Do I Write Weapon &amp; Class Binds?</a>
+  <li><a href="hints.htm#weaponbank">Weapon bank Assignments</a>
+  <li><a href="spread.htm">Weapons
+    Spread/Rate of Fire</a>
+  <li><a href="hints.htm#spawnpoint">Can Spawn point Scripts Be Used in ET?</a>
+  <li><a href="fireteam.htm">What's A Fire
+    Team?</a>
+  <li><a href="mine.htm">A Mine Is A
+    Terrible Thing To Waste</a>
+  <li><a href="covert.htm">How Does The
+    Uniform Swapping Work</a>
+  <li><a href="mortar.htm">What's A
+    Mortar?</a>
+  <li><a href="hints.htm#newcommand">So What New Commands Will I Need?</a>
+  <li><a href="chat.htm">How Do I Bind All
+    The New VSAY's?</a>
+  <li><a href="hints.htm#otherfaq">Other Frequently Asked Questions</a></li>
+</ul>
+<a name="started"></a>
+<h4><font color="#ffffff">Getting Started</font></h4>
+<p>First, you need to go into the Game Dir/Enemy Territory/Docs folder and look
+for a file called PlayerGuide.html. That will give you a quick introduction to
+the new player classes and game mechanics.
+<p>I think that you'll find most of what you know in RTCW ports over pretty well
+to Enemy Territory. For sure, lots of people will drift towards the new weapons
+and classes at first, but give it some time and everything will even out.
+<p><a href="hints.htm#index">Back To Index</a>
+<p><a name="changes"></a>
+<h4><font color="#ffffff">What's Changed Since Test?</font></h4>
+<font color="#C0C0C0">This is not an all inclusive list, but I thought I'd
+highlight some of the game changes (but not bug fixes), many made in response to
+community feedback, that Splash Damage/id/Activision made to the game since the
+release of Test. All I can say is, &quot;WOW!!!&quot;. There should be no doubt
+that the developers listened closely to what the community said they wanted from
+the game and delivered in spades. Thanks!</font>
+<p><font color="#C0C0C0">&nbsp;</font>
+<ol>
+  <li><font color="#C0C0C0">Player animations are much much smoother now</font>
+  <li><font color="#C0C0C0">Map load times drastically improved</font>
+  <li><font color="#C0C0C0">Echo statements returned</font>
+  <li><font color="#C0C0C0">Headshots (with or without helmet) with scoped
+    rifles now cause instant death</font>
+  <li><font color="#C0C0C0">Headshot damage reduction from helmets standardized
+    to -20 damage, except for headshots by scoped rifles (K43 or Garand)</font>
+  <li><font color="#C0C0C0">Panzerfaust blast radius reduced by 25%</font>
+  <li><font color="#C0C0C0">Models for med and ammo packs changed to mirror what
+    you see in the ammo racks and make it easier to distinguish what is lying on
+    the ground</font>
+  <li><font color="#C0C0C0">Wire added over the top of the Fuel Dump wall breach
+    to prevent stacking</font>
+  <li><font color="#C0C0C0">Health is now shown as a discrete value in addition
+    to the health bar</font>
+  <li><font color="#C0C0C0">General calls for &quot;medic&quot; on player death
+    made distinct from player-initiated requests for &quot;medic!&quot; and
+    sound off in the local environment rather than as a global voice message.
+    Enemy players nearby can also hear the call for &quot;Medic&quot;.
+    &quot;Medic!&quot; text spam whenever a player is killed has also been
+    removed</font>
+  <li><font color="#C0C0C0">Three additional ranks added (Brigadier General,
+    Major General, General) for achieving Level 4 in 5, 6, and 7 skills
+    respectively</font>
+  <li><font color="#C0C0C0">Experience gained per health or ammo pack reduced
+    from 2 per pack to 1 per pack</font>
+  <li><font color="#C0C0C0">Grenade physics changed back to original RTCW
+    physics</font>
+  <li><font color="#C0C0C0">Audible signals sound when votes are called (bell
+    chime) or when referees take an action (referee's whistle)</font>
+  <li><font color="#C0C0C0">Quick chat structure now completely mirrors the RTCW
+    chat structure. New chats have been added to the END of the appropriate
+    menus</font>
+  <li><font color="#C0C0C0">Voices completely reworked and many favorites,
+    including multiple variations (cheers, etc) brought back</font>
+  <li><font color="#C0C0C0">New sound effects added - some guns for sure, not
+    sure what else</font>
+  <li><font color="#C0C0C0">Double-tap to prone can now be turned off via the
+    Options Menu</font>
+  <li><font color="#C0C0C0">&quot;No shoot&quot; symbol when targetting
+    disguised covert ops made a little more prominant and seems to pop up faster</font>
+  <li><font color="#C0C0C0">&quot;No shoot&quot; symbol shown when player takes
+    a position from which they cannot use the weapon (e.g., panzer from prone)</font>
+  <li><font color="#C0C0C0">Some skill level awards renamed to make benefits
+    more clear (e.g., Adrenaline is now known as Full Revive)</font>
+  <li><font color="#C0C0C0">If you run over an ammo pack with 2 magazines, you
+    are told that you picked up a &quot;Mega Ammo Pack&quot;</font>
+  <li><font color="#C0C0C0">Spread on MG-42s increased slightly</font>
+  <li><font color="#C0C0C0">Constructable command posts now have a flag
+    indicating which team built it</font>
+  <li><font color="#C0C0C0">Added end-game animations to the maps</font>
+  <li><font color="#C0C0C0">Axis medic skin changed - no longer wearing an
+    overcoat; other skins made more detailed such as the Axis Field Ops</font>
+  <li><font color="#C0C0C0">Axis and Allied satchel charges are now different
+    colors</font>
+  <li><font color="#C0C0C0">Objectives are voiced at beginning of map and after
+    certain gates are reached (e.g., Tunnel doors blown)</font>
+  <li><font color="#C0C0C0">Face is now more animated and when the first
+    headshot is received, the helmet is removed</font>
+  <li><font color="#C0C0C0">Construction noises now sound when building
+    something</font>
+  <li><font color="#C0C0C0">Player given warning if standing in a construction
+    zone</font>
+  <li><font color="#C0C0C0">Player guide expanded and improved significantly.
+    Gives detail behind experience points, skills, and lots more &quot;how
+    to&quot;</font>
+  <li><font color="#C0C0C0">Standing at tank-destroyable doors result in player
+    death if in blast area</font></li>
+</ol>
+<p><a href="hints.htm#index">Back To Index</a>
+<p><a name="limbomenu"></a>
+<h4><font color="#ffffff">New and Improved Limbo Menu</font></h4>
+<font color="#C0C0C0">The first thing that you will notice is the new limbo
+menu. The developers have done a great job of putting everything, that used to
+take multiple click views, into one control panel:</font>
+<p><img src="limbomenu.jpg" width="904" height="657">
+<p>&nbsp;
+<ol>
+  <li><font color="#C0C0C0">Objective Summary</font>
+  <li><font color="#C0C0C0">Command Map. The buttons to the left enable you to
+    select what you want to show on the command map and how large the icons will
+    appear. To select spawn sites, use the command map and click on any of your
+    side's flags and at next respawn that's where you will start off</font>
+  <li><font color="#C0C0C0">Game Timers</font>
+  <li><font color="#C0C0C0">Skills and Experience Summary</font>
+  <li><font color="#C0C0C0">Team Summary. Shows how many allies, axis, and
+    spectators are currently in-game</font>
+  <li><font color="#C0C0C0">Class Summary. Similar to the /classes command in
+    Shrub. Shows how many of each class currently are on your team</font>
+  <li><font color="#C0C0C0">Weapons Selection and Stats. Notice that there is
+    &quot;1 of 2&quot; under the picture of the SMG. This indicates that the
+    Thompson is 1 of 2 weapons available to the engineer. Click on the SMG and
+    you will see a drop down box showing all the weapons available to you, based
+    on selected class. Click on one to select.</font></li>
+</ol>
+<p><a href="hints.htm#index">Back To Index</a>
+<p><a name="playerclasses"></a>
+<h4><font color="#ffffff">Player Classes and Equipment</font></h4>
+<font color="#C0C0C0">All of the original classes are back with one addition and
+one re-naming. Here is a quick summary of what has changed, gains from
+experience notwithstanding, with each class:</font>
+<p>&nbsp;
+<ol>
+  <table height="462" border="1">
+    <tbody>
+      <tr>
+        <th>Class</th>
+        <th>Changes from RTCW</th>
+      </tr>
+      <tr vAlign="top">
+        <td height="45">Soldier</td>
+        <td height="45">
+          <ul>
+            <li>Lost ability to select Venom (gone), Sniper rifle (changed), or
+              non-default SMG
+            <li>Added ability to select MG42 and mortar</li>
+          </ul>
+        </td>
+      </tr>
+      <tr vAlign="top">
+        <td>Engineer</td>
+        <td>
+          <ul>
+            <li>Required to construct game objectives
+            <li>Required to repair vehicles
+            <li><a href="http://www.net-clan.com/WolfWeb/ETWolfMines.htm">Ability
+              to plant land mines (weaponbank 7)</a>
+            <li>Ability to defuse land mines and satchel charges
+            <li>Option to select from one of 2 weapons
+            <li>Spawns with only 4 grenades but can accumulate up to 8 through
+              ammo packs</li>
+          </ul>
+        </td>
+      </tr>
+      <tr vAlign="top">
+        <td>Medic</td>
+        <td>
+          <ul>
+            <li>None as far as I can tell</li>
+          </ul>
+        </td>
+      </tr>
+      <tr vAlign="top">
+        <td>Field Ops (aka Lieutenant)</td>
+        <td>
+          <ul>
+            <li>Name change from Lieutenant
+            <li>Airstrikes now require 100% bar
+            <li>Number of airstrikes at one time limited
+            <li>Limited to default SMG. Cannot select other weapons
+            <li>Artillery barrage now has 8 shots vs 4 but smaller blast radius
+              per shot</li>
+          </ul>
+        </td>
+      </tr>
+      <tr vAlign="top">
+        <td height="97">Covert Ops (new)</td>
+        <td height="97">
+          <ul>
+            <li>Ability to detect mines (Use binoculars, and keep looking at
+              them till it plants a flag)
+            <li><a href="http://www.net-clan.com/WolfWeb/ETWolfCovert.htm">Ability
+              to acquire enemy uniform</a>
+            <li>Performs role previously filled by Soldier-Mauser
+            <li>Can choose from one of 3 weapons
+            <li>Can plant satchel charges (weaponbank 6) and use smoke grenades
+              (weaponbank 5)</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ol>
+<p>With the exception of the Medic and Field Ops, everyone gets a bunch of
+weapons to play around with. Medics and Field Ops just get the default SMG.
+<p><b>NOTE: This was tested by launching two instances of the game, creating a
+fireteam (so I could see a discrete health figure), then shooting the crap out
+of myself.</b>
+<p>A couple of observations:
+<p>&nbsp;
+<ol>
+  <li><font color="#C0C0C0">Headshot damage has been reduced by 20 points when
+    the target has a helmet</font>
+  <li><font color="#C0C0C0">MP40s and Thompsons do the same amount of damage</font>
+  <li><font color="#C0C0C0">Scoped weapons will do more damage (body and head)
+    while in scoped mode</font>
+  <li><font color="#C0C0C0">Base pistol damage has been upped to 18</font>
+  <li><font color="#C0C0C0">Range affects damage. Pistols, SMGs, and the FG42
+    deal half damage at long range. I don't know what consitutes &quot;long
+    range&quot; but I tested shooting from the top of the MG42 hill to the
+    Allied side of the bridging site on Fueldump</font></li>
+</ol>
+<p><img src="weapontable.jpg" width="857" height="652">
+<p><a href="hints.htm#index">Back To Index</a>
+<p><a name="weaponscript"></a>
+<h4><font color="#ffffff">How Do I Write Weapon &amp; Class Binds?</font></h4>
+<font color="#C0C0C0">For those of you who want to write class selection binds
+and scripts, the team/class/weapon variables have been changed significantly.
+Now, the three seperate variables from RTCW are combined into a single
+&quot;team&quot; variable, which takes the form:</font>
+<p><font color="#C0C0C0">&nbsp;</font>
+<ol>
+  <font color="#C0C0C0">bind x &quot;team [team][playertype][weapon]&quot;</font>
+</ol>
+<p><font color="#C0C0C0">Where:</font>
+<ol>
+  <li><font color="#C0C0C0">[team] is r=axis, b=allies</font>
+  <li><font color="#C0C0C0">[playertype] is 0=soldier, 1=medic, 2=engineer,
+    3=field ops, 4=covert ops</font>
+  <li><font color="#C0C0C0">[weapon] is 3-35 (see chart above)</font></li>
+</ol>
+<p>So a bind to spawn me as an Axis engineer with the K43 w/ grenade launcher
+would look like this:
+<p>&nbsp;
+<ol>
+  bind x &quot;team r 2 23&quot;
+</ol>
+<p><a href="hints.htm#index">Back To Index</a>
+<p><a name="weaponbank"></a>
+<h4><font color="#ffffff">Weaponbank Assignments</font></h4>
+<p>For those of you who want to write scripts involving weaponbanks, here are
+the assignments for weaponbanks 1-7 by class. You'll notice that there is an
+additional weaponbank (7) and it's only used by the engineer.
+<p><img height="276" alt="Image temporarily taken down - bandwidth getting overwhelmed" src="weaponbanks.jpg" width="647">
+<p>&nbsp;
+<p><a href="hints.htm#index">Back To Index</a>
+<p><a name="spawnpoint"></a>
+<h4><font color="#ffffff">Can Spawnpoint Scripts Be Used In ET?</font></h4>
+<font color="#C0C0C0">Yes and no. For each map, there are spawnpoints associated
+with spawnpoint0 - spawnpoint4. However, the assignment of spawnpoint numbers to
+spawnpoints is inconsistant. In RTCW, spawnpoint1 would always spawn you at the
+rearmost axis spawnpoint. Not so in ET. Here is a chart of maps and spawnpoint
+assignments:</font>
+<p><img height="403" src="spawnpoints.jpg" width="821">
+<p><a href="hints.htm#index">Back To Index</a>
+<p><a name="newcommand"></a>
+<h4><font color="#ffffff">So What New Commands Will I Need?</font></h4>
+<font color="#C0C0C0">Since people are going to want to know how much their
+basic configs have to change, I thought I'd offer up the list of commands I had
+to add to my RTCW config. The good news is that I was able to copy just about
+all of my scripts and configs from RTCW to ET, all except for the class select
+script.</font>
+<ul>
+  <li><font color="#C0C0C0">bind x &quot;+prone&quot; //sends you to the prone
+    position. Click again to stand up</font>
+    <p>&nbsp;
+    <table>
+      <tbody>
+        <tr>
+          <td><img alt="Image temporarily taken down - bandwidth getting overwhelmed" src="stand.jpg" width="403" height="302"></td>
+          <td><img alt="Image temporarily taken down - bandwidth getting overwhelmed" src="crouch.jpg" width="403" height="302"></td>
+        </tr>
+        <tr>
+          <td>Standing</td>
+          <td>Crouched</td>
+        </tr>
+        <tr>
+          <td colSpan="2"><img src="spacer.gif" width="1" height="1"></td>
+        </tr>
+        <tr>
+          <td><img alt="Image temporarily taken down - bandwidth getting overwhelmed" src="prone.jpg" width="403" height="302"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Prone</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>A couple of things to keep in mind while prone
+    <ul>
+      <li><font color="#C0C0C0">When crawling, you can't shoot, change weapons,
+        or reload</font>
+      <li><font color="#C0C0C0">If you are crouched, you can double tap forward
+        to enter the prone position (you can turn this option off thru the
+        Options Menu)</font>
+      <li><font color="#C0C0C0">MG42s in the alt fire mode (bipod down) can only
+        be fired from the prone. While in the alt fire position, you will also
+        have a limited arc of fire, so be careful about your facing before
+        getting into the prone position</font>
+      <li><font color="#C0C0C0">If you are prone, you can't set up your mortar</font>
+      <li><font color="#C0C0C0">Panzerfausts cannot be fired from the prone
+        position</font>
+      <li><font color="#C0C0C0">If you use a crouch toggle and were in the
+        crouched position when going prone, you will be crouched when you leave
+        the prone position</font>
+      <li><font color="#C0C0C0">You can also jump while in the prone position to
+        get up quickly</font></li>
+    </ul>
+    <p>&nbsp;</p>
+  <li><font color="#C0C0C0">bind x &quot;+mapexpand&quot; //brings up an
+    overhead map of the battlefield.</font>
+    <p>&nbsp;
+    <ol>
+      <img alt="Image temporarily taken down - bandwidth getting overwhelmed" src="commandmap.jpg" width="403" height="302">
+    </ol>
+    <p>Tips:
+    <ul>
+      <li><font color="#C0C0C0">You can still move and shoot while your command
+        map is up, much like the scoreboard in RTCW.</font>
+      <li><font color="#C0C0C0">If you have a Field Ops on your team, every
+        enemy he can see will be marked on your map</font>
+      <li><font color="#C0C0C0">Mortar gunners can see where artillery and their
+        mortar rounds hit on the command map</font></li>
+    </ul>
+    <p><font color="#C0C0C0">&nbsp;</font></p>
+  <li><font color="#C0C0C0">bind x &quot;+stats&quot; //slight change from the
+    stats command in shrub and OSP. Notice this also tells you how much
+    experience is needed to achieve the next skill level</font>
+    <p>&nbsp;
+    <ol>
+      <img alt="Image temporarily taken down - bandwidth getting overwhelmed" src="playerstats.jpg" width="558" height="238">
+    </ol>
+    <p>&nbsp;</p>
+  <li><font color="#C0C0C0">bind x &quot;mapzoomin&quot; //zooms compass map in</font>
+  <li><font color="#C0C0C0">bind z &quot;mapzoomout&quot; //zooms compass map
+    out</font>
+    <p>&nbsp;
+    <table>
+      <tbody>
+        <tr>
+          <td><img alt="Image temporarily taken down - bandwidth getting overwhelmed" src="default.jpg" width="250" height="250"></td>
+          <td><img alt="Image temporarily taken down - bandwidth getting overwhelmed" src="zoomin.jpg" ? width="250" height="250"></td>
+          <td><img alt="Image temporarily taken down - bandwidth getting overwhelmed" src="zoomout.jpg" width="250" height="250"></td>
+        </tr>
+        <tr>
+          <td>Default level of detail</td>
+          <td>zoomed in 2X clicks</td>
+          <td>Zoomed out 2X clicks</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>&nbsp;</p>
+  <li><font color="#C0C0C0">bind x &quot;weapalt&quot; //same command as
+    previously used with Mauser, just applicable to more weapons and classes now</font>
+  <li><font color="#C0C0C0">bind x &quot;openlimbomenu&quot; //previously I did
+    not have this bound but now the limbo menu now shows more information</font>
+  <li><font color="#C0C0C0">bind x &quot;mp_fireteammsg&quot; //messaging to a
+    pre-selected sub set of the team</font>
+  <li><font color="#C0C0C0">bind x &quot;messagemode3&quot; //free text messages
+    to a pre-selected sub set of the team</font>
+  <li><font color="#C0C0C0">bind x &quot;mp_fireteamadmin&quot; //calls up the
+    fire team admin menu</font>
+  <li><font color="#C0C0C0">bind x &quot;weaponbank 7&quot; //rolled this into a
+    weapon toggle with my grenades</font>
+  <li><font color="#C0C0C0">bind x &quot;wm_sayplayerclass&quot; //Voices your
+    current class</font>
+  <li><font color="#C0C0C0">bind x &quot;autoscreenshot&quot; //takes a time and
+    map stamped screenshot</font>
+  <li><font color="#C0C0C0">bind x &quot;toggle cg_atmosphericeffects&quot;
+    //turns off rain and snow</font>
+    <p><font color="#C0C0C0">&nbsp;</font></p>
+  <li><font color="#C0C0C0">seta cg_crosshairColorAlt &quot;red&quot;</font>
+  <li><font color="#C0C0C0">seta cg_crosshairColor &quot;red&quot;</font>
+  <li><font color="#C0C0C0">seta cl_doubletapdelay &quot;0&quot; //sets max
+    delay for double-tap to prone, set to 0 to disable</font>
+  <li><font color="#C0C0C0">seta cg_reinforcementtime &quot;1&quot; //draw
+    reinforcement timer under game timer</font></li>
+</ul>
+<p><a href="hints.htm#index">Back To Index</a>
+<p><a name="otherfaq"></a>
+<h4><font color="#ffffff">Other Frequently Asked Questions</font></h4>
+<ul>
+  <li><b><font color="#ffffff">Why can't soldiers pick the Mauser rifle?</font></b><br>
+    <font color="#C0C0C0">For the most part, sniper weapons have been moved over
+    to the new class, Covert Ops. They get to choose from either the FG42 or a
+    silenced, scoped sniper rifle.</font>
+    <p>&nbsp;</p>
+  <li><b><font color="#ffffff">What! No venom?</font></b><br>
+    <font color="#C0C0C0">Nope. The venom was retired for a mobile MG42. I think
+    you'll get used to the MG42 real quickly and learn how to use it in the most
+    effective way. A couple of notes on the mobile MG42:</font>
+    <p><font color="#C0C0C0">&nbsp;</font>
+    <ul>
+      <li><font color="#C0C0C0">150 rounds per belt</font>
+      <li><font color="#C0C0C0">4+1 belts max loadout</font>
+      <li><font color="#C0C0C0">~30-35 rounds a second</font>
+      <li><font color="#C0C0C0">No spin up time</font>
+      <li><font color="#C0C0C0">MG 42 does overheat</font>
+      <li><font color="#C0C0C0">2 firing modes:</font>
+        <ol>
+          <li><font color="#C0C0C0">not on bipod: can move, very inaccurate</font>
+          <li><font color="#C0C0C0">on bipod: must be in prone, can crawl*, much
+            more accurate</font></li>
+        </ol>
+      </li>
+    </ul>
+    <p>&nbsp;</p>
+  </li>
+</ul>
+<ul>
+  <li><b><font color="#ffffff">What happened to the Lieutenant? How am I going
+    to get my ammo?</font></b><br>
+    <font color="#C0C0C0">The Lieutenant has just been rebranded as the Field
+    Ops Specialist. The Field Ops can do everything the LT could except pick
+    from the 3 available SMGs. The reason for this is the promotion and ranks
+    system associated with experience. It would get confusing to have someone
+    named Lieutenant Sergeant Iffy.</font>
+    <p>&nbsp;</p>
+  <li><b><font color="#ffffff">WTF? How do I select spawn points?</font></b><br>
+    <font color="#C0C0C0">Call up the limbo menu and look for the American or
+    German flags. Those represent the spawn points. use your cursor to click on
+    any of your sides spawn points and that's where you'll respawn. There is a
+    way to select spawn points through the use of a spawn point script, but
+    there is currently no standard naming/numbering convention for spawn points.</font>
+    <p>&nbsp;</p>
+  <li><b><font color="#ffffff">The game doesn't recognize MOUSE3. What's up with
+    that?</font></b><br>
+    <font color="#C0C0C0">This is a problem I had. ET would not recognize the
+    same MOUSE3 bind that I use for RTCW. Uninstalling the Logitech Mouseware
+    program fixed this for me. On another note, you can now bind MOUSE4 and
+    MOUSE5.</font>
+    <p>&nbsp;</p>
+  <li><b><font color="#ffffff">What happened to +dropweapon?</font></b><br>
+    <font color="#C0C0C0">Currently, +dropweapon doesn't work. However, you can
+    still exchange weapons. Any class, which has multiple weapon options, can
+    exchange their current weapon for another - as long as the new weapon was
+    originally available to them. The exception is that engineers and medics can
+    pick up the other side's default SMG. To exchange weapons, stand over the
+    new weapon until the tool tip appears, then hit +activate.</font></li>
+</ul>
+</body>
+</html>
