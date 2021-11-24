@@ -1,14 +1,15 @@
 # Table of Contents
 
-- [Getting Started](#getting-started)
-- [What's Changed Since Test?](#whats-changed-since-test)
-- [New and Improved Limbo Menu](#new-and-improved-limbo-menu)
-- [Player Classes and Equipment](#player-classes-and-equipment)
-- [How Do I Write Weapon & Class Binds?](#how-do-i-write-weapon--class-binds)
-- [Weaponbank Assignments](#weaponbank-assignments)
-- [Can Spawnpoint Scripts Be Used In ET?](#can-spawnpoint-scripts-be-used-in-et)
-- [So What New Commands Will I Need?](#so-what-new-commands-will-i-need)
-- [Other Frequently Asked Questions](#other-frequently-asked-questions)
+- [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [What's Changed Since Test?](#whats-changed-since-test)
+  - [New and Improved Limbo Menu](#new-and-improved-limbo-menu)
+  - [Player Classes and Equipment](#player-classes-and-equipment)
+  - [How Do I Write Weapon & Class Binds?](#how-do-i-write-weapon--class-binds)
+  - [Weaponbank Assignments](#weaponbank-assignments)
+  - [Can Spawnpoint Scripts Be Used In ET?](#can-spawnpoint-scripts-be-used-in-et)
+  - [So What New Commands Will I Need?](#so-what-new-commands-will-i-need)
+  - [Other Frequently Asked Questions](#other-frequently-asked-questions)
 
 Other documents referenced here, but links broken, or included but not shown on the site:
 - [Fireteams](fireteam.md)
@@ -177,9 +178,9 @@ Since people are going to want to know how much their basic configs have to chan
     
     ![Image temporarily taken down - bandwidth getting overwhelmed](stand.jpg)
     
-    ![Image temporarily taken down - bandwidth getting overwhelmed](crouch.jpg)
-    
     Standing
+
+    ![Image temporarily taken down - bandwidth getting overwhelmed](crouch.jpg)
     
     Crouched
     
