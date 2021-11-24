@@ -2,8 +2,6 @@
 
 This is a backup of https://www.net-clan.com/WolfWeb/ for historical/educational/archival  purposes. Keep in mind this refered to the vanilla game as it was in 2007 - but nothing has really changed much since then anyway.
 
-One day I may get around to rewriting everything in markdown, but for now it's just straight mdl rips.
-
 Note: Some links are broken as the original pages are already missing from the web. 98% of it is here though.
 
 #
