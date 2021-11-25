@@ -29,4 +29,4 @@ Here's a couple of things I've run across - most are pretty common sense, but I 
 2.  Also when a disguised Covert Ops is looked at by a Level 4 Field Op his icon reverts to his team colour on the maps and "Enemy In Disguise" is written above his heads where the players name should be.
 3.  A Covert Ops in disguise can pass through enemy-only doors. This is particularly helpful when accompanied by an engineer - you can get to some objectives very quickly
 4.  The Covert Ops' satchel charge is a much more efficient way of blowing thru obstacles enroute to the objective than using the engineer's dyno. It blows quicker and it doesn't use up the engineers charge bar.
-5.  Scout around with your binoculars to [spot and mark mines for your team](/mine.md)
+5.  Scout around with your binoculars to [spot and mark mines for your team](mine.md)

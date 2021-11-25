@@ -1,6 +1,6 @@
-# Table of Contents
+# Enemy Territory Help
 
-- [Table of Contents](#table-of-contents)
+- [Enemy Territory Help](#enemy-territory-help)
   - [Getting Started](#getting-started)
   - [What's Changed Since Test?](#whats-changed-since-test)
   - [New and Improved Limbo Menu](#new-and-improved-limbo-menu)
