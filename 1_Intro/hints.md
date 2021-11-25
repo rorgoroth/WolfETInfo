@@ -20,16 +20,13 @@ Other documents referenced here, but links broken, or included but not shown on 
 - [Weapon Spread](spread.md)
 - [XP - Experience Points](xp.md)
 
-#
-## Getting Started
 
+## Getting Started
 First, you need to go into the Game Dir/Enemy Territory/Docs folder and look for a file called PlayerGuide.html. That will give you a quick introduction to the new player classes and game mechanics.
 
 I think that you'll find most of what you know in RTCW ports over pretty well to Enemy Territory. For sure, lots of people will drift towards the new weapons and classes at first, but give it some time and everything will even out.
 
-#
 ## What's Changed Since Test?
-
 This is not an all inclusive list, but I thought I'd highlight some of the game changes (but not bug fixes), many made in response to community feedback, that Splash Damage/id/Activision made to the game since the release of Test. All I can say is, "WOW!!!". There should be no doubt that the developers listened closely to what the community said they wanted from the game and delivered in spades. Thanks!
 
 1.  Player animations are much much smoother now
@@ -66,9 +63,8 @@ This is not an all inclusive list, but I thought I'd highlight some of the game 
 32.  Player guide expanded and improved significantly. Gives detail behind experience points, skills, and lots more "how to"
 33.  Standing at tank-destroyable doors result in player death if in blast area
 
-#
-## New and Improved Limbo Menu
 
+## New and Improved Limbo Menu
 The first thing that you will notice is the new limbo menu. The developers have done a great job of putting everything, that used to take multiple click views, into one control panel:
 
 ![](limbomenu.jpg)
@@ -81,20 +77,16 @@ The first thing that you will notice is the new limbo menu. The developers have 
 6.  Class Summary. Similar to the /classes command in Shrub. Shows how many of each class currently are on your team
 7.  Weapons Selection and Stats. Notice that there is "1 of 2" under the picture of the SMG. This indicates that the Thompson is 1 of 2 weapons available to the engineer. Click on the SMG and you will see a drop down box showing all the weapons available to you, based on selected class. Click on one to select.
 
-#
-## Player Classes and Equipment
 
+## Player Classes and Equipment
 All of the original classes are back with one addition and one re-naming. Here is a quick summary of what has changed, gains from experience notwithstanding, with each class:
 
-**Class Changes from RTCW**
-
-Soldier
-
+**Class Changes from RTCW**  
+Soldier  
 *   Lost ability to select Venom (gone), Sniper rifle (changed), or non-default SMG
 *   Added ability to select MG42 and mortar
 
-Engineer
-
+Engineer  
 *   Required to construct game objectives
 *   Required to repair vehicles
 *   [Ability to plant land mines (weaponbank 7)](/mine.md)
@@ -102,20 +94,17 @@ Engineer
 *   Option to select from one of 2 weapons
 *   Spawns with only 4 grenades but can accumulate up to 8 through ammo packs
 
-Medic
-
+Medic  
 *   None as far as I can tell
 
-Field Ops (aka Lieutenant)
-
+Field Ops (aka Lieutenant)  
 *   Name change from Lieutenant
 *   Airstrikes now require 100% bar
 *   Number of airstrikes at one time limited
 *   Limited to default SMG. Cannot select other weapons
 *   Artillery barrage now has 8 shots vs 4 but smaller blast radius per shot
 
-Covert Ops (new)
-
+Covert Ops (new)  
 *   Ability to detect mines (Use binoculars, and keep looking at them till it plants a flag)
 *   [Ability to acquire enemy uniform](/covert.md)
 *   Performs role previously filled by Soldier-Mauser
@@ -126,8 +115,7 @@ With the exception of the Medic and Field Ops, everyone gets a bunch of weapons 
 
 **NOTE: This was tested by launching two instances of the game, creating a fireteam (so I could see a discrete health figure), then shooting the crap out of myself.**
 
-A couple of observations:
-
+A couple of observations:  
 1.  Headshot damage has been reduced by 20 points when the target has a helmet
 2.  MP40s and Thompsons do the same amount of damage
 3.  Scoped weapons will do more damage (body and head) while in scoped mode
@@ -136,9 +124,7 @@ A couple of observations:
 
 ![](weapontable.jpg)
 
-#
 ## How Do I Write Weapon & Class Binds?
-
 For those of you who want to write class selection binds and scripts, the team/class/weapon variables have been changed significantly. Now, the three seperate variables from RTCW are combined into a single "team" variable, which takes the form:
 
 bind x "team \[team\]\[playertype\]\[weapon\]"
@@ -153,23 +139,17 @@ So a bind to spawn me as an Axis engineer with the K43 w/ grenade launcher would
 
 bind x "team r 2 23"
 
-#
 ## Weaponbank Assignments
-
 For those of you who want to write scripts involving weaponbanks, here are the assignments for weaponbanks 1-7 by class. You'll notice that there is an additional weaponbank (7) and it's only used by the engineer.
 
 ![Image temporarily taken down - bandwidth getting overwhelmed](weaponbanks.jpg)
 
-#
 ## Can Spawnpoint Scripts Be Used In ET?
-
 Yes and no. For each map, there are spawnpoints associated with spawnpoint0 - spawnpoint4. However, the assignment of spawnpoint numbers to spawnpoints is inconsistant. In RTCW, spawnpoint1 would always spawn you at the rearmost axis spawnpoint. Not so in ET. Here is a chart of maps and spawnpoint assignments:
 
 ![](spawnpoints.jpg)
 
-#
 ## So What New Commands Will I Need?
-
 Since people are going to want to know how much their basic configs have to change, I thought I'd offer up the list of commands I had to add to my RTCW config. The good news is that I was able to copy just about all of my scripts and configs from RTCW to ET, all except for the class select script.
 
 *   bind x "+prone" //sends you to the prone position. Click again to stand up
@@ -246,9 +226,7 @@ Since people are going to want to know how much their basic configs have to chan
 *   seta cl\_doubletapdelay "0" //sets max delay for double-tap to prone, set to 0 to disable
 *   seta cg\_reinforcementtime "1" //draw reinforcement timer under game timer
 
-#
 ## Other Frequently Asked Questions
-
 *   **Why can't soldiers pick the Mauser rifle?**  
     For the most part, sniper weapons have been moved over to the new class, Covert Ops. They get to choose from either the FG42 or a silenced, scoped sniper rifle.
     
