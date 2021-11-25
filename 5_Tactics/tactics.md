@@ -1,14 +1,16 @@
-### Basic Team Techniques
+# Basic Team Techniques
+
+- [Basic Team Techniques](#basic-team-techniques)
+  - [Overview](#overview)
+  - [Team Integrity](#team-integrity)
+  - [Movement](#movement)
+  - [Actions on contact](#actions-on-contact)
+  - [Setting up interlocking fields of fire](#setting-up-interlocking-fields-of-fire)
+  - [Working with other classes (Very Basic)](#working-with-other-classes-very-basic)
 
 #
 ## Overview
 For many people, RTCW is the first team-based FPS they've played. If you're like me, I've played a lot of FPS games, but mostly deathmatch or team deathmatch, nothing like the interdependent class-based system in RTCW. Teamwork is the key to success and many effective team techniques can be practiced with other people you haven't 'trained' with. It's a matter of everyone understanding some fundamentals and understanding what others are trying to do. What I'd like to do now is discuss some basic fire team (e.g., small teams of 2-4) concepts - not the entire Allied or Axis team, but techniques you can use with just one or two others.
-
-- [Team Integrity](#team-integrity)
-- [Movement](#movement)
-- [Actions on contact](#actions-on-contact)
-- [Setting up interlocking fields of fire](#setting-up-interlocking-fields-of-fire)
-- [Working with other classes (Very Basic)](#working-with-other-classes-very-basic)
 
 #
 ## Team Integrity
