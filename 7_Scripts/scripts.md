@@ -1,24 +1,43 @@
 # Scripting and Config-Tuning for Wolfenstein : Enemy Territory
 
+- [Scripting and Config-Tuning for Wolfenstein : Enemy Territory](#scripting-and-config-tuning-for-wolfenstein--enemy-territory)
+  - [Basics / FAQ](#basics--faq)
+  - [Some basic explanations and definitions](#some-basic-explanations-and-definitions)
+  - [Useful Scripts](#useful-scripts)
+    - [Volume Script](#volume-script)
+    - [Stats/Topshots Script](#statstopshots-script)
+    - [Command-Map Script](#command-map-script)
+    - [Replay-Script](#replay-script)
+    - [Field Of Vision-Script](#field-of-vision-script)
+    - [Alternative Field Of Vision- Script](#alternative-field-of-vision--script)
+    - [Near/Far Toggle-Script](#nearfar-toggle-script)
+    - [Spawnpoint Script](#spawnpoint-script)
+    - [Class & Weapon Selection-Script](#class--weapon-selection-script)
+    - [Namechange-Script](#namechange-script)
+    - [Direct Support Fire Script (only for Field Ops)](#direct-support-fire-script-only-for-field-ops)
+    - [Hide or Show your Main Weapon Script](#hide-or-show-your-main-weapon-script)
+    - [Binocular-Script](#binocular-script)
+    - [Sniper-Script](#sniper-script)
+    - [Script to stay crouched](#script-to-stay-crouched)
+    - [Chat-Toggle](#chat-toggle)
+    - [Suicide-Script](#suicide-script)
+    - [Zoom Mini map in/out](#zoom-mini-map-inout)
+    - [Atmospheric Effects Toggle](#atmospheric-effects-toggle)
+    - [Network Settings & more](#network-settings--more)
+  - [Namesettings and Colors](#namesettings-and-colors)
+  - [Speech-Commands](#speech-commands)
+    - [VSAY list](#vsay-list)
+  - [Sources and Links](#sources-and-links)
+
+  
+#
+## Basics / FAQ
 This tutorial is dealing with (hopefully) useful scripts for the Multiplayer Online Game "Wolfenstein : Enemy Territory". Developed by Splashdamage.
 
 Many of the scripts included in this tutorial are not written by myself. They have been collected from various sources all over the internet like Forum posts, websites and the IRC. My part in this was to collect these scripts, writing explanations, more text and to put them into a structure. Yet, some scripts are also written by myself. As much as possible I have mentioned my sources and more links to the topic of scripting for ET at the end of this tutorial.
 
-The tutorial consists of several parts. In the beginning you will find some basic explanations and a little FAQ. Then we move on to useful Scripts and a number of various commands, coloured names and speech-commands in the end.  
-
-# Menu
-
-- [Basics / FAQ](#basics--faq)
-- [Some basic explanations and definitions](#some-basic-explanations-and-definitions)
-- [Useful Scripts](#useful-scripts)
-- [Namesettings and Colors](#namesettings-and-colors)
-- [Speech-Commands](#speech-commands)
-- [Sources and Links](#sources-and-links) _Note: These have been dead for as long as 16 years now!_
-
-
+The tutorial consists of several parts. In the beginning you will find some basic explanations and a little FAQ. Then we move on to useful Scripts and a number of various commands, coloured names and speech-commands in the end.
 #
-## Basics / FAQ
-
 **Question :** What is a config ?  
 **Answer :** A config is a .cfg file. It includes commands and settings that can be executed by ET.  
 ET is automatically creating a config for every player-profile that you create, but we will use an additional config.
@@ -28,7 +47,7 @@ ET is automatically creating a config for every player-profile that you create, 
 
 **Question** : Which config-file has to be modified ?  
 **Answer :** Using WordPad or the Editor you create a file in your etmain folder. Simply open WordPad / Editor and save an empty file with the name of autoexec.cfg to this folder :  
-````c:\\Program Files\\Wolfenstein - Enemy Territory\\etmain\\autoexec.cfg````   
+`c:\\Program Files\\Wolfenstein - Enemy Territory\\etmain\\autoexec.cfg`  
 Make sure you don't save the file as a "text" file, the ending .cfg has to be correct.  
 It's ok that this file is empty in the beginning, it's gonna be filled later with scripts and commands as you advance in this tutorial.
 
@@ -55,9 +74,9 @@ I am not going to answer any further questions related to Mouses, please call th
 
 **Question** **:** How can I undo a setting that I changed in my config-file ?  
 **Answer :** It is not enough to just erase this setting from your config. Instead, you must put the standard-value for the certain option you want to have changed back. You can find out about the standard setting by using the console in ET.  
-For example if you wanna find out the current value for r\_subdivisions and the standard value, go ahead like this :  
+For example if you wanna find out the current value for `r_subdivisions` and the standard value, go ahead like this :  
 Open the console and type :  
-/r\_subdivisions  
+`/r_subdivisions`  
 Then, you will see the value that r\_subdivisions has at the moment and also the standard value for it.
 
 #
@@ -74,7 +93,7 @@ set, sets, seta are basically doing the same, they are defining a value for a va
 **Bind** - with the bind command, an action can be bind to a specific key, just like you define for example that by pressing Mousebutton 1 you shoot your gun in the normal options menu. In the scripts I mention later on, you will have to replace the "X" with a key that you prefer.
 
 **Unbind** - a command to unbind a key. Do so by using the console in ET and typing in :  
-````/unbind X````  
+`/unbind X`  
 (use any other button instead of "X")
 
 **Toggle** - with a toggle usually a switch between two values for a variable is bind to a key.
@@ -84,7 +103,7 @@ set, sets, seta are basically doing the same, they are defining a value for a va
 
 Simply copy/paste the script you want to use to your autoexec.cfg and change the keybindings to suit your needs.
 
-**Volume Script**  
+### Volume Script  
 With this volume-script you bind 2 keys that increase / decrease the volume during the game.  
 ````
 //  
@@ -108,7 +127,7 @@ set voldown vstr vol05
 //  
 ````
 
-**Stats/Topshots Script**  
+### Stats/Topshots Script  
 By pressing a key, you can see your stats and your topshots at the same time. They stay on the screen until that key is pressed once again.  
 ````
 //  
@@ -121,7 +140,7 @@ set statistics2 "-topshots;-stats;set statisticsall vstr statistics"
 //
 ````
 
-**Command-Map Script**  
+### Command-Map Script  
 Displays the command-map until the key is pressed again.  
 ````
 //  
@@ -134,7 +153,7 @@ set map "vstr mapout"
 //  
 ````
 
-**Replay-Script**  
+### Replay-Script  
 stops/starts a replay-recording by pressing a key. First key press Starts replay recording.  
 ````
 //  
@@ -147,7 +166,7 @@ set demotoggle "vstr demostop"
 //  
 ````
 
-**Field Of Vision-Script**  
+### Field Of Vision-Script  
 With 2 keys you can increase and decrease your fov between a value of 90 and 120 degrees.  
 A fov of 120 is usually the highest that leagues and tournaments allow the players to use.
 ````
@@ -168,7 +187,7 @@ set fov120 "cg\_fov 120;set fdn vstr fov115;set fup vstr fov125;echo fov 120"
 //
 ````
 
-**Alternative Field Of Vision- Script**  
+### Alternative Field Of Vision- Script  
 Using the cycle command, you can switch the fov from 90 to 120 in steps of 5 degrees.  
 You cannot decrease the fov with this script, but it starts with 90 again after you reach 120.  
 ````
@@ -179,7 +198,7 @@ bind "X" "cycle fov 90 120 5"
 //  
 ````
 
-**Near/Far Toggle-Script**  
+### Near/Far Toggle-Script  
 For a long range shooting players often use different settings than in a close-up infight.  
 This script sets different values for your crosshair, fov, crosshairsize and your mouse-sensitivity.  
 By pressing the key that you bind the script to, you can switch between the settings for long distance shootings and close up infights.  
@@ -195,7 +214,7 @@ set crosssensitoggle "vstr near"
 //
 ````
 
-**Spawnpoint Script**  
+### Spawnpoint Script  
 This script uses 12 more little config-files. Download them and unzip them into your etmain folder :  
 [http://www.net-clan.com/WolfWeb/spawn\_script.zip](http://www.net-clan.com/WolfWeb/spawn_script.zip)  
 By pressing the defined keys you can select the map and the side (Axis or Allies) you are playing currently.  
@@ -223,7 +242,7 @@ SET maptoggle12 "exec ax\_gold\_rush.cfg; set maptoggle vstr maptoggle1"
 //
 ````
 
-**Class & Weapon Selection-Script**  
+### Class & Weapon Selection-Script  
 This script is done by [www.cowboyscripts.org](http://www.cowboyscripts.org) and has just been modified a little bit by me since the spawnpoint toggle that was originally included is not as comfortable as the one in the script above.  
 Since this script here is rather long, you should save it in an extra config-file and add the line to your autoexec.cfg:  
 ````
@@ -352,15 +371,15 @@ loaded!"
 //  
 ````
 
-**Namechange-Script**  
+### Namechange-Script  
 By using this script you can switch through 3 self-defined playernames.  
 Normal Namescripts like in Q3 or RTCW have a little bug in ET so that no capital letters can be used. So this script is a little less elegant but at least it works :)  
-Please create 3 extra config-files entitled name1.cfg, name2.cfg ans name3.cfg in your etmain folder and insert the line  
-````seta name "MyNameVariation1"  ````
+Please create 3 extra config-files entitled name1.cfg, name2.cfg and name3.cfg in your etmain folder and insert the line  
+`seta name "MyNameVariation1"`  
 to name1.cfg and  
-````seta name "MyNameVariation2"  ````
+`seta name "MyNameVariation2"`  
 in the name2.cfg and  
-````seta name "MyNameVariation3"  ````
+`seta name "MyNameVariation3"`  
 to name3.cfg  
 Choose names you prefer and course you may use the color codes that are mentioned later on in this tutorial.  
 ````
@@ -375,7 +394,7 @@ set namechange "vstr name1"
 //  
 ````
 
-**Direct Support Fire Script (only for Field Ops)**  
+### Direct Support Fire Script (only for Field Ops)  
 With this script, a Field Ops requests a support fire by pressing the defined key. It happens quite quick, so be sure that you have your crosshair pointing directly on your target since there is no phase anymore where you can choose a target through your binoculars.  
 ````
 //  
@@ -385,7 +404,7 @@ bind "X" "+zoom;+attack;-attack;-zoom"
 //  
 ````
 
-**Hide or Show your Main Weapon Script**  
+### Hide or Show your Main Weapon Script  
 ````
 //  
 // Hide or Show you Main Weapon Script  
@@ -396,7 +415,7 @@ set Guntog "vstr Guntog2"
 bind T "vstr Guntog"
 ````
 
-**Binocular-Script**  
+### Binocular-Script  
 With this script you can switch to binocular-sight and you only leave this sight again when the key is pressed again.  
 ````
 //  
@@ -409,7 +428,7 @@ set binocular "vstr bino\_on"
 //
 ````
 
-**Sniper-Script**  
+### Sniper-Script  
 This script is for lazy snipers that want to press one key to crouch and change to the zoom of the sniper. Press the key again to stand up and switch to normal sight.  
 ````
 //  
@@ -423,7 +442,7 @@ set nextsnipecrouchtoggle "vstr snipecrouch"
 //
 ````
 
-**Script to stay crouched**  
+### Script to stay crouched  
 With this script a player can crouch and stay like this until the key is pressed again.
 ````
 //  
@@ -436,7 +455,7 @@ set crouchswitch "vstr duck"
 //
 ````
 
-**Chat-Toggle**  
+### Chat-Toggle  
 By pressing a key, you can switch off all global chat.  
 Switch everything back to normal by pressing the button again.  
 ````
@@ -447,7 +466,7 @@ bind "X" "toggle cg\_teamchatonly"
 //
 ````
 
-**Suicide-Script**  
+### Suicide-Script  
 Not really a script but very useful : By pressing a key you commit suicide to be able to spawn in another class for example.  
 ````
 //  
@@ -457,7 +476,7 @@ bind "X" "kill"
 //
 ````
 
-**Zoom Mini map in/out**  
+### Zoom Mini map in/out  
 ````
 bind x "mapzoomin" //zooms compass map in
 bind z "mapzoomout" //zooms compass map out
@@ -469,7 +488,7 @@ _Zoomed in 2X clicks_
 ![](zoomout.jpg)  
 _Zoomed out 2X clicks_
 
-**Atmospheric Effects Toggle**  
+### Atmospheric Effects Toggle  
 ````
 // Atmospheric Effects Toggle  
 // ---------------------------------------  
@@ -479,29 +498,29 @@ set atmtog "vstr atmtog2"
 bind X "vstr atmtog"
 ````
 
-**Network Settings & more**  
-````seta com\_hunkmegs "Wert"```` Defines how much RAM your PC reserves for ET. If you have 512 mb RAM, you can safely choose a value of 200.  
+### Network Settings & more  
+`seta com\_hunkmegs "Wert"` Defines how much RAM your PC reserves for ET. If you have 512 mb RAM, you can safely choose a value of 200.  
 
-````seta com\_soundmegs "Wert"```` Defines, how much RAM your PC reserves for the sound of ET, 32 is ok if you have 512 mb RAM  
+`seta com\_soundmegs "Wert"` Defines, how much RAM your PC reserves for the sound of ET, 32 is ok if you have 512 mb RAM  
 
-````seta cl\_timenudge "Wert"```` Default is "0" . Negative values are used to simulate lesserpings, but if you go too low you start lagging and see your opponents move no longer smoothly. Some leagues dont allow negative values at all, some up to -20. Positive values dont make sense at all, btw.  
+`seta cl\_timenudge "Wert"` Default is "0" . Negative values are used to simulate lesserpings, but if you go too low you start lagging and see your opponents move no longer smoothly. Some leagues dont allow negative values at all, some up to -20. Positive values dont make sense at all, btw.  
 
-````seta cl\_allowdownload "1/0"```` Defines if you get files from the server if your client doesn't have them (custom maps for example). default and recommended is "1". if The server wants to send you maps that are not running on it at the moment, try to set this to "0" and reconnect, sometimes this helps.
+`seta cl\_allowdownload "1/0"` Defines if you get files from the server if your client doesn't have them (custom maps for example). default and recommended is "1". if The server wants to send you maps that are not running on it at the moment, try to set this to "0" and reconnect, sometimes this helps.
 
 Network-Settings for Modem-Users (56k)  
-````seta cl\_maxpackets "30"````  
-````seta snaps "20"````  
-````seta rate "5000"````
+`seta cl\_maxpackets "30"`  
+`seta snaps "20"`  
+`seta rate "5000"`
 
 Network Settings for ISDN Users  
-````seta cl\_maxpackets "60````  
-````seta snaps "40"````  
-````seta rate "7000"````  
+`seta cl\_maxpackets "60`  
+`seta snaps "40"`  
+`seta rate "7000"`  
 
 Network Settings for DSL, Cable and other broadband connections  
-````seta cl\_maxpackets "60"````  
-````seta snaps "40"````  
-````seta rate "25000"````  
+`seta cl\_maxpackets "60"`  
+`seta snaps "40"`  
+`seta rate "25000"`  
 
 #
 ## Namesettings and Colors
@@ -538,7 +557,7 @@ bind "X" "vsay\_team NeedEngineer" // As an example, this will give out "We need
 //
 ````
 
-**VSAY list**  
+### VSAY list  
 Format: VSAY "In-Game Output"
 
 PathCleared "Path cleared."  
@@ -634,19 +653,19 @@ FTProvideSniperCover "Provide sniper cover!"
 #
 ## Sources and Links  
 [  
-](http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151)**planetwolfenstein.de Forum about Scripting : [http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151](http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151)
+](http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151)planetwolfenstein.de Forum about Scripting: [http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151](http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151)
 
-Wolfenstein 4 Dummies : [http://www.rtcwonline.com/dummies/](http://www.rtcwonline.com/dummies/)
+Wolfenstein 4 Dummies: [http://www.rtcwonline.com/dummies/](http://www.rtcwonline.com/dummies/)
 
-Wolfstah.com, Australiian Wolfenstein Page : [http://www.wolfstah.com](http://www.wolfstah.com)
+Wolfstah.com, Australiian Wolfenstein Page: [http://www.wolfstah.com](http://www.wolfstah.com)
 
-Cowboyscripts, (for the superselector) : [http://www.cowboyscripts.org/](http://www.cowboyscripts.org/)
+Cowboyscripts, (for the superselector): [http://www.cowboyscripts.org/](http://www.cowboyscripts.org/)
 
-Elite Force Tweak Guide : [http://mitglied.lycos.de/overbeck1/tweak/elite\_force\_tweak\_guide.htm](http://mitglied.lycos.de/overbeck1/tweak/elite_force_tweak_guide.htm%20)
+Elite Force Tweak Guide: [http://mitglied.lycos.de/overbeck1/tweak/elite\_force\_tweak\_guide.htm](http://mitglied.lycos.de/overbeck1/tweak/elite_force_tweak_guide.htm%20)
 
-High Boys's Home : [http://wolf.dehn.net/](http://wolf.dehn.net/%20)
+High Boys's Home: [http://wolf.dehn.net/](http://wolf.dehn.net/%20)
 
-Keens Q3 Engine Variablen : [http://www.gameadmins.com/modules.php?name=Keen\_Guide&op=variables](http://www.gameadmins.com/modules.php?name=Keen_Guide&op=variables%20)
+Keens Q3 Engine Variablen: [http://www.gameadmins.com/modules.php?name=Keen\_Guide&op=variables](http://www.gameadmins.com/modules.php?name=Keen_Guide&op=variables%20)
 
 Cultposting about the FPS and what this does to the DZM you can jump in the Quake 3 engine : :[  
 http://ads.gamespy.com/hserver/SITE=Q3W/TIER=3/GENRE=ACTION/AREA=FORUM/AAMSZ=IAB\_FULL\_BANNER?unique](http://ads.gamespy.com/hserver/SITE=Q3W/TIER=3/GENRE=ACTION/AREA=FORUM/AAMSZ=IAB_FULL_BANNER?unique%20)
