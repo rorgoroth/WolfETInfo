@@ -89,7 +89,7 @@ Soldier
 Engineer  
 *   Required to construct game objectives
 *   Required to repair vehicles
-*   [Ability to plant land mines (weaponbank 7)](/mine.md)
+*   [Ability to plant land mines (weaponbank 7)](mine.md)
 *   Ability to defuse land mines and satchel charges
 *   Option to select from one of 2 weapons
 *   Spawns with only 4 grenades but can accumulate up to 8 through ammo packs
@@ -106,7 +106,7 @@ Field Ops (aka Lieutenant)
 
 Covert Ops (new)  
 *   Ability to detect mines (Use binoculars, and keep looking at them till it plants a flag)
-*   [Ability to acquire enemy uniform](/covert.md)
+*   [Ability to acquire enemy uniform](covert.md)
 *   Performs role previously filled by Soldier-Mauser
 *   Can choose from one of 3 weapons
 *   Can plant satchel charges (weaponbank 6) and use smoke grenades (weaponbank 5)
