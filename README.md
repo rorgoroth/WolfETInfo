@@ -1,11 +1,11 @@
 # Backup of net-clan Wolfenstein: Enemy Territory documentation.
 
-This is a backup of https://www.net-clan.com/WolfWeb/ for historical/educational/archival  purposes. Keep in mind this refered to the vanilla game as it was in 2007 - but nothing has really changed much since then anyway.
+This is a backup of https://www.net-clan.com/WolfWeb/ for historical/educational/archival purposes. Keep in mind this refered to the vanilla game as it was in 2007/v2.60b - but nothing has changed since then anyway.
 
 Note: Some links are broken as the original pages are already missing from the web. 98% of it is here though.
 
 #
-# Table of Contents
+### Table of Contents
 1. [Intro (hints)](/1_Intro/hints.md)
 1. [Maps](/2_Maps/maps.md)
 1. [Classes](/3_Classes/classes.md)
