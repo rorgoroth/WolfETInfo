@@ -6,13 +6,12 @@ A fire team is a sub group within your overall team. You could create a fire tea
 #
 ## The new HUD
 
-![](fireteamhud.jpg) The old HUD, showing the top 7 scorers, has been replaced with the fire team HUD. The HUD still gives the basic information, but tailored to the set of people you want to track. This way, you can create strike teams, watch a subset of defenders, or just coordinate amongst your buddies. The HUD shows class, rank, name, health, and the buddies grid coordiates.
+![](fireteamhud.jpg)  
+The old HUD, showing the top 7 scorers, has been replaced with the fire team HUD. The HUD still gives the basic information, but tailored to the set of people you want to track. This way, you can create strike teams, watch a subset of defenders, or just coordinate amongst your buddies. The HUD shows class, rank, name, health, and the buddies grid coordiates.
 
 For starters, make sure you have the a key bound to Fire Team Admin:
 
 bind x "mp\_fireteamadmin"
-
- 
 
 ![](ftscreen1.jpg)
 
@@ -50,7 +49,7 @@ Members of your fire team, however, are marked with their name and a white circl
 
 When you join a fire team, you can also use the command:
 
-> selectbuddy (possible values of -2, -1, 1, 2, 3, 4, 5, or 6)
+`selectbuddy` (possible values of -2, -1, 1, 2, 3, 4, 5, or 6)
 
 to show a fire team icon on top of the select buddy's head. To show the icon over ALL team members' heads, use the value -2. -1 turns the icons off, and 1-6 selectively add the icon only to specified buddies. This is particularly useful on dark maps and in thick vegetation. There are a total of 6 icons which correspond to the 6 possible fire teams that can be formed.
 
@@ -58,8 +57,10 @@ to show a fire team icon on top of the select buddy's head. To show the icon ove
 
 I've created a simple script to toggle the team icons on and off:
 
-> //Fireteam script - toggles buddy team icons  
-> set showteam "selectbuddy -2; set nextteamtoggle vstr hideteam; echo Team Highlighted!!!"  
-> set hideteam "selectbuddy -1; set nextteamtoggle vstr showteam; echo Team icons hidden!!!"  
-> set nextteamtoggle "vstr showteam"  
-> bind x "vstr nextteamtoggle"
+````
+//Fireteam script - toggles buddy team icons  
+set showteam "selectbuddy -2; set nextteamtoggle vstr hideteam; echo Team Highlighted!!!"  
+set hideteam "selectbuddy -1; set nextteamtoggle vstr showteam; echo Team icons hidden!!!"  
+set nextteamtoggle "vstr showteam"  
+bind x "vstr nextteamtoggle"
+````

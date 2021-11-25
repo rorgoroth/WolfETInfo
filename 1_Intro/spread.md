@@ -3,23 +3,23 @@
 1st I would just like to clear up a Myth that I think comes from the RtCW days, Thompson's and MP40's are **EXACTLY THE SAME** the spread is more or less the same, see pics 1-6, the fire rate is the same on both weapons (about 4.5 secs to empty a full clip\*) and they both hold 30 bullets in a clip.  
  
 
-**Pic 1 Thompson Close range**  
+Thompson Close range:  
 ![](ETShortThompson.jpg)
 
-**Pic 2 MP40 Close range  
-**![](ETShortMP40.jpg)
+MP40 Close range:  
+![](ETShortMP40.jpg)
 
-**Pic 3 Thompson Short range  
-**![](ETShortThompson2.jpg)
+Thompson Short range:  
+![](ETShortThompson2.jpg)
 
-**Pic 4 MP40 Short range  
-**![](ETShortMP402.jpg)
+MP40 Short range:  
+![](ETShortMP402.jpg)
 
-**Pic 5 Thompson Medium range  
-**![](ETMediumThompson.jpg)
+Thompson Medium range:  
+![](ETMediumThompson.jpg)
 
-**Pic 6 MP40 Medium range  
-**![](ETMediumMP40.jpg)
+MP40 Medium range:  
+![](ETMediumMP40.jpg)
 
 Ok now down to the Nitty Gritty:-
 
@@ -50,24 +50,24 @@ Pistols have not been covered in this review, as I believe their spread is not e
 #
 ## RESEARCH METHODOLOGY
 
-**\\g\_gametype 2  
-\\devmap mapname  
-\\timelimit 0**
+`/g_gametype 2`  
+`/devmap mapname`  
+`/timelimit 0**`
 
  Then choose your class, stand in front of a light wall to clearly see the bullet holes (I was in the first Axis respawn on Goldrush).
 
-**\\cg\_marktime 2000000  
-\\give ammo**
+`/cg_marktime 2000000`  
+`/give ammo`
 
- Shoot out like 10 clips in one point to distinctly see your current spread borders.
+Shoot out like 10 clips in one point to distinctly see your current spread borders.
 
  Then play with skill parameters:
 
- **\\give skill**  _with no additional parameters this command will be awarding you with all available skills consecutively: Level 1 thru Level 4 as you type it in._
+ `/give skill`  (_with no additional parameters this command will be awarding you with all available skills consecutively: Level 1 thru Level 4 as you type it in._)
 
  To experiment with some certain skills enter:
 
-**\\give skill X**
+`/give skill X`
 
      where **X** _is:_
 
@@ -87,9 +87,9 @@ Pistols have not been covered in this review, as I believe their spread is not e
 
  For more fun and visuals you can also use
 
-**\\g\_debugbullets 1  
-\\cg\_railtrailtime 60000**
+`/g_debugbullets 1`  
+`/cg_railtrailtime 60000`
 
 To nullify all skills and marks on walls
 
- **\\map\_restart**
+ `/map_restart`
