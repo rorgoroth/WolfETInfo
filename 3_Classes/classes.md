@@ -1,11 +1,13 @@
+# Classes 
 Need some tips to play at your full effectiveness? Whether you need a beginner's guide to the classes or advanced strategies for winning, this is the place. Complete info on the class-specific skills and advice that's guaranteed to boost your score.
 
-**Classes**
-- [Soldier](#soldier)
-- [Medic](#medic)
-- [Engineer](#engineer)
-- [Field Op](#field-op)
-- [Covert Ops](#covert-ops)
+#
+- [Classes](#classes)
+  - [Soldier](#soldier)
+  - [Medic](#medic)
+  - [Engineer](#engineer)
+  - [Field Op](#field-op)
+  - [Covert Ops](#covert-ops)
 
 #
 ## Soldier
