@@ -1,4 +1,6 @@
-How Does The Uniform Swapping Work?
+# Covert Ops
+
+## How Does The Uniform Swapping Work?
 
 ![](stealing.jpg)
 

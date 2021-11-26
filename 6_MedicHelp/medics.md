@@ -1,6 +1,5 @@
-### Medics
+# Medics
 
-#
 ## Why be a medic?
 
 Medics are the nurturing mother figure of a ET/RTCW team. They are vital to ensuring the survivability of a team by providing health to heal the wounded and reviving the dead. A good medic greatly reduces the amount of time team members spend in Limbo or travelling from the spawn site.

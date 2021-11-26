@@ -131,7 +131,6 @@ A big area of interest with a few goals to accomplish will be to cover and suppo
 
 Now go forth and cause mass destruction. Wipe out a machine gun nest with a glance. Destroy thundering tanks with a puff of smoke, but don't forget to keep your buddies stocked with ammo. A bang is better than a click any day of the week.
 
-  
 Here's how the Field Ops progresses with the class specific "Signals" reward system. This is straight from the Wolfenstein: Enemy Territory manual, and we all read that right?
 
 **Signals**  
