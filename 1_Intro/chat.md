@@ -1,11 +1,13 @@
 # Chat
+
 - [Chat](#chat)
   - [How Do I Bind All The New VSAY's?](#how-do-i-bind-all-the-new-vsays)
   - [Quick Chat Menu](#quick-chat-menu)
   - [Fire Team Chat Menu](#fire-team-chat-menu)
   - [Bindable Statements Not Available Through Quick Chat](#bindable-statements-not-available-through-quick-chat)
 
-#
+---
+
 ## How Do I Bind All The New VSAY's?
 
 Here is how the quick reference, voice text, and bind assignments line up. This list has been updated for Enemy Territory (Final). The format I've used is:
@@ -19,19 +21,19 @@ In order to bind a key to a vsay, just do the following:
 
 You have three options:
 
-1.  Use `vsay` for a global message - it will show up in cyan to everyone. Example. bind x "vsay onmyway"
-2.  Use `vsay_team` for a team message - it will show up in green to everyone on your team. Example: `bind x "vsay_team onmyway"`
-3.  Use `vsay_buddy [class number] [number of players] [list of players' fireteam IDs] [vsay string]` - sends a voice chat to the entire team - it will show up in yellow to the recipients. Example: `bind x "vsay_buddy -1 0 needbackup"`
-    
-    *   For binds just use 0 for num\_players, and omit the player list
-    *   Classnumber should be -1 for any class, and 0-4 for the classes in their usual order.
-    
+1. Use `vsay` for a global message - it will show up in cyan to everyone. Example. bind x "vsay onmyway"
+2. Use `vsay_team` for a team message - it will show up in green to everyone on your team. Example: `bind x "vsay_team onmyway"`
+3. Use `vsay_buddy [class number] [number of players] [list of players' fireteam IDs] [vsay string]` - sends a voice chat to the entire team - it will show up in yellow to the recipients. Example: `bind x "vsay_buddy -1 0 needbackup"`
+
+    - For binds just use 0 for num\_players, and omit the player list
+    - Classnumber should be -1 for any class, and 0-4 for the classes in their usual order.
+
     So, if I wanted to bind a key to say "need back up" to the entire team, it would look like:
-    
+
     `bind x "vsay_buddy -1 0 needbackup"`
 
+---
 
-#
 ## Quick Chat Menu
 
 **1. Statements**  
@@ -117,8 +119,10 @@ to replicate choosing "function" from the menu. It will say your current functio
 79 - Destroy the vehicle! - DestroyVehicle  
 70 - Escort the vehicle! - EscortVehicle  
 
-#
+---
+
 ## Fire Team Chat Menu
+
 (Fire team-specific quick chat)
 
 **6 General**  
@@ -138,7 +142,8 @@ Mirrors general chat
 **8 Fire Team**  
 8 - Fall back! - FTFallBack  
 
-#
+---
+
 ## Bindable Statements Not Available Through Quick Chat
 
 Numbers refer to file names not key strings. Some of these may be available to specific team members via the fire team quick chat.

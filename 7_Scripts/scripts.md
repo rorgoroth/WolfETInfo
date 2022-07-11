@@ -29,15 +29,18 @@
     - [VSAY list](#vsay-list)
   - [Sources and Links](#sources-and-links)
 
-  
-#
+---
+
 ## Basics / FAQ
+
 This tutorial is dealing with (hopefully) useful scripts for the Multiplayer Online Game "Wolfenstein : Enemy Territory". Developed by Splashdamage.
 
 Many of the scripts included in this tutorial are not written by myself. They have been collected from various sources all over the internet like Forum posts, websites and the IRC. My part in this was to collect these scripts, writing explanations, more text and to put them into a structure. Yet, some scripts are also written by myself. As much as possible I have mentioned my sources and more links to the topic of scripting for ET at the end of this tutorial.
 
 The tutorial consists of several parts. In the beginning you will find some basic explanations and a little FAQ. Then we move on to useful Scripts and a number of various commands, coloured names and speech-commands in the end.
-#
+
+---
+
 **Question :** What is a config ?  
 **Answer :** A config is a .cfg file. It includes commands and settings that can be executed by ET.  
 ET is automatically creating a config for every player-profile that you create, but we will use an additional config.
@@ -63,12 +66,12 @@ exec NameOfOtherConfigFile.cfg
 
 **Question :** How are all these Keys on my Keyboard called that can be used to bind a command to them ?  
 **Answer :** Check out this picture, it should be self-explanatory :  
-![](Tastatur_t.gif)
+![x](Tastatur_t.gif)
 
 **Question :** How can I use all the many buttons of a Logitech Mouse (like the MX500) ?  
 **Answer :** You must have Mouseware 9.76 installed (or a higher version).  
 If this is not enough, you may install a little patch from Logitech, here you find the download-link :  
-http://www.game-foundation.com/files/logitech\_mousebuttons\_games.zip  
+<http://www.game-foundation.com/files/logitech\_mousebuttons\_games.zip>  
 ET will recognise the Mousebuttons if you bind a mouse-button to a key like "F12" or "DEL" using your Logitech-Mouseware.  
 I am not going to answer any further questions related to Mouses, please call the hotline of the Company that built your mouse or use google to find any further answers :)
 
@@ -79,7 +82,8 @@ Open the console and type :
 `/r_subdivisions`  
 Then, you will see the value that r\_subdivisions has at the moment and also the standard value for it.
 
-#
+---
+
 ## Some basic explanations and definitions
 
 If you just wanna use some scripts without understanding them on a deeper level, just go ahead and continue with the "Useful Scripts" section, and leave this part here out.
@@ -98,14 +102,17 @@ set, sets, seta are basically doing the same, they are defining a value for a va
 
 **Toggle** - with a toggle usually a switch between two values for a variable is bind to a key.
 
-#
+---
+
 ## Useful Scripts
 
 Simply copy/paste the script you want to use to your autoexec.cfg and change the keybindings to suit your needs.
 
 ### Volume Script  
+
 With this volume-script you bind 2 keys that increase / decrease the volume during the game.  
-````
+
+````text
 //  
 // Volume-Script  
 //  
@@ -128,8 +135,10 @@ set voldown vstr vol05
 ````
 
 ### Stats/Topshots Script  
+
 By pressing a key, you can see your stats and your topshots at the same time. They stay on the screen until that key is pressed once again.  
-````
+
+````text
 //  
 // Stats & Topshots Script  
 //  
@@ -141,8 +150,10 @@ set statistics2 "-topshots;-stats;set statisticsall vstr statistics"
 ````
 
 ### Command-Map Script  
+
 Displays the command-map until the key is pressed again.  
-````
+
+````text
 //  
 //Command map script  
 //  
@@ -154,8 +165,10 @@ set map "vstr mapout"
 ````
 
 ### Replay-Script  
+
 stops/starts a replay-recording by pressing a key. First key press Starts replay recording.  
-````
+
+````text
 //  
 // Replay-Script  
 //  
@@ -167,9 +180,11 @@ set demotoggle "vstr demostop"
 ````
 
 ### Field Of Vision-Script  
+
 With 2 keys you can increase and decrease your fov between a value of 90 and 120 degrees.  
 A fov of 120 is usually the highest that leagues and tournaments allow the players to use.
-````
+
+````text
 //  
 // fov-Script  
 //  
@@ -188,9 +203,11 @@ set fov120 "cg\_fov 120;set fdn vstr fov115;set fup vstr fov125;echo fov 120"
 ````
 
 ### Alternative Field Of Vision- Script  
+
 Using the cycle command, you can switch the fov from 90 to 120 in steps of 5 degrees.  
 You cannot decrease the fov with this script, but it starts with 90 again after you reach 120.  
-````
+
+````text
 //  
 // alternatives fov-Script  
 //  
@@ -199,11 +216,13 @@ bind "X" "cycle fov 90 120 5"
 ````
 
 ### Near/Far Toggle-Script  
+
 For a long range shooting players often use different settings than in a close-up infight.  
 This script sets different values for your crosshair, fov, crosshairsize and your mouse-sensitivity.  
 By pressing the key that you bind the script to, you can switch between the settings for long distance shootings and close up infights.  
 Please note that you will have to customise the settings so that they suit you. The values included here are just meant to give an example of what the script is about.  
-````
+
+````text
 //  
 // Near/Far Toggle-Script  
 //  
@@ -215,13 +234,15 @@ set crosssensitoggle "vstr near"
 ````
 
 ### Spawnpoint Script  
+
 This script uses 12 more little config-files. Download them and unzip them into your etmain folder :  
 [http://www.net-clan.com/WolfWeb/spawn\_script.zip](http://www.net-clan.com/WolfWeb/spawn_script.zip)  
 By pressing the defined keys you can select the map and the side (Axis or Allies) you are playing currently.  
 After that you use another defined key to select the spawnpoint where you wanna spawn.  
 Standard-Key for selecting the spawnpoint is "o" thats next to P. You must change that key in each of the 12 config-files to choose another key that suits you.  
 The main part of this script as seen below has to be copied into your autoexec.cfg .  
-````
+
+````text
 //  
 // Spawnpoint-Script (there are 12 more config-files that go along with this script !)  
 //  
@@ -243,16 +264,20 @@ SET maptoggle12 "exec ax\_gold\_rush.cfg; set maptoggle vstr maptoggle1"
 ````
 
 ### Class & Weapon Selection-Script  
+
 This script is done by [www.cowboyscripts.org](http://www.cowboyscripts.org) and has just been modified a little bit by me since the spawnpoint toggle that was originally included is not as comfortable as the one in the script above.  
 Since this script here is rather long, you should save it in an extra config-file and add the line to your autoexec.cfg:  
-````
+
+````text
 //  
 exec NameOfExtraConfig.cfg  
 //  
 ````
+
 In the User-Section of this Script there are altogether 10 keys defined so choose them carefully :)  
 Attention : Before entering the game in a certain class, you must alway chose a side (Axis or Allies) which you want to play!  
-````
+
+````text
 //  
 // Class & Weapon Section-Script  
 //  
@@ -372,6 +397,7 @@ loaded!"
 ````
 
 ### Namechange-Script  
+
 By using this script you can switch through 3 self-defined playernames.  
 Normal Namescripts like in Q3 or RTCW have a little bug in ET so that no capital letters can be used. So this script is a little less elegant but at least it works :)  
 Please create 3 extra config-files entitled name1.cfg, name2.cfg and name3.cfg in your etmain folder and insert the line  
@@ -382,7 +408,8 @@ in the name2.cfg and
 `seta name "MyNameVariation3"`  
 to name3.cfg  
 Choose names you prefer and course you may use the color codes that are mentioned later on in this tutorial.  
-````
+
+````text
 //  
 // Namechange-Script  
 //  
@@ -395,8 +422,10 @@ set namechange "vstr name1"
 ````
 
 ### Direct Support Fire Script (only for Field Ops)  
+
 With this script, a Field Ops requests a support fire by pressing the defined key. It happens quite quick, so be sure that you have your crosshair pointing directly on your target since there is no phase anymore where you can choose a target through your binoculars.  
-````
+
+````text
 //  
 // Direct Support Fire Script (only for Field Ops)  
 //  
@@ -405,7 +434,8 @@ bind "X" "+zoom;+attack;-attack;-zoom"
 ````
 
 ### Hide or Show your Main Weapon Script  
-````
+
+````text
 //  
 // Hide or Show you Main Weapon Script  
 //  
@@ -416,8 +446,10 @@ bind T "vstr Guntog"
 ````
 
 ### Binocular-Script  
+
 With this script you can switch to binocular-sight and you only leave this sight again when the key is pressed again.  
-````
+
+````text
 //  
 // Binocular-Script  
 //  
@@ -429,8 +461,10 @@ set binocular "vstr bino\_on"
 ````
 
 ### Sniper-Script  
+
 This script is for lazy snipers that want to press one key to crouch and change to the zoom of the sniper. Press the key again to stand up and switch to normal sight.  
-````
+
+````text
 //  
 // Sniper-Script  
 //  
@@ -443,8 +477,10 @@ set nextsnipecrouchtoggle "vstr snipecrouch"
 ````
 
 ### Script to stay crouched  
+
 With this script a player can crouch and stay like this until the key is pressed again.
-````
+
+````text
 //  
 // Script to stay crouched  
 //  
@@ -456,9 +492,11 @@ set crouchswitch "vstr duck"
 ````
 
 ### Chat-Toggle  
+
 By pressing a key, you can switch off all global chat.  
 Switch everything back to normal by pressing the button again.  
-````
+
+````text
 //  
 // Teamchat-Toggle  
 //  
@@ -467,8 +505,10 @@ bind "X" "toggle cg\_teamchatonly"
 ````
 
 ### Suicide-Script  
+
 Not really a script but very useful : By pressing a key you commit suicide to be able to spawn in another class for example.  
-````
+
+````text
 //  
 // Suicide-Script  
 //  
@@ -477,19 +517,22 @@ bind "X" "kill"
 ````
 
 ### Zoom Mini map in/out  
-````
+
+````text
 bind x "mapzoomin" //zooms compass map in
 bind z "mapzoomout" //zooms compass map out
 ````
-![](default.jpg)  
+
+![x](default.jpg)  
 _Default level of detail_  
-![](zoomin.jpg)  
+![x](zoomin.jpg)  
 _Zoomed in 2X clicks_  
-![](zoomout.jpg)  
+![x](zoomout.jpg)  
 _Zoomed out 2X clicks_
 
 ### Atmospheric Effects Toggle  
-````
+
+````text
 // Atmospheric Effects Toggle  
 // ---------------------------------------  
 set atmtog1 "cg\_atmosphericeffects 0; set atmtog vstr atmtog2; echo ^0Atmospheric Effects ^oOFF"  
@@ -499,6 +542,7 @@ bind X "vstr atmtog"
 ````
 
 ### Network Settings & more  
+
 `seta com\_hunkmegs "Wert"` Defines how much RAM your PC reserves for ET. If you have 512 mb RAM, you can safely choose a value of 200.  
 
 `seta com\_soundmegs "Wert"` Defines, how much RAM your PC reserves for the sound of ET, 32 is ok if you have 512 mb RAM  
@@ -522,7 +566,8 @@ Network Settings for DSL, Cable and other broadband connections
 `seta snaps "40"`  
 `seta rate "25000"`  
 
-#
+---
+
 ## Namesettings and Colors
 
 There is an easy to use program on the download section that is good or even better than this, if you would prefer to use that....
@@ -533,10 +578,10 @@ with this command, you define your playername in the game. To add colours to it,
 A coloured name would look like this for example :  
 seta name "^2c^5o^8l^ko^pr^he^1d ^7Noob"
 
-![](Colors.jpg)  
+![x](Colors.jpg)  
 
-  
-#
+---
+
 ## Speech-Commands
 
 There is the possibility to bind all the speech-commands from the quickchat menu to a key.  
@@ -544,20 +589,23 @@ Many players use this to have even faster access to certain speech-commands.
 There are 3 possibilities : speech can be heard by all players on the server or only by your Teammates.
 
 Speech-Command to all people on the server :  
-````
+
+````text
 //  
 bind "X" "vsay Sorry" // As an example, this will give out "Sorry"  
 //
 ````
 
 Speech-Command to all players in your team :  
-````
+
+````text
 //  
 bind "X" "vsay\_team NeedEngineer" // As an example, this will give out "We need an Engineer"  
 //
 ````
 
 ### VSAY list  
+
 Format: VSAY "In-Game Output"
 
 PathCleared "Path cleared."  
@@ -650,8 +698,10 @@ FTInfiltrate "Infiltrate!"
 FTGoUndercover "Go undercover!"  
 FTProvideSniperCover "Provide sniper cover!"  
 
-#
+---
+
 ## Sources and Links  
+
 [  
 ](http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151)planetwolfenstein.de Forum about Scripting: [http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151](http://forum.ingame.de/wolfenstein/forumdisplay.php?s=&forumid=151)
 
@@ -670,7 +720,6 @@ Keens Q3 Engine Variablen: [http://www.gameadmins.com/modules.php?name=Keen\_Gui
 Cultposting about the FPS and what this does to the DZM you can jump in the Quake 3 engine : :[  
 http://ads.gamespy.com/hserver/SITE=Q3W/TIER=3/GENRE=ACTION/AREA=FORUM/AAMSZ=IAB\_FULL\_BANNER?unique](http://ads.gamespy.com/hserver/SITE=Q3W/TIER=3/GENRE=ACTION/AREA=FORUM/AAMSZ=IAB_FULL_BANNER?unique%20)
 
-  
 wolfenstein.ch good scripting forum  
 [http://www.wolfenstein.ch/forum/board.php?boardid=23&sid=dfc5bed4408752dbcc527e2120e6ef91](http://www.wolfenstein.ch/forum/board.php?boardid=23&sid=dfc5bed4408752dbcc527e2120e6ef91)
 

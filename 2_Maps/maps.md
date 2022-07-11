@@ -1,21 +1,26 @@
 # Maps/Campaigns
-- [Maps/Campaigns](#mapscampaigns)
-- [North Africa Campaign](#north-africa-campaign)
-  - [Oasis](#oasis)
-  - [Seawall Battery](#seawall-battery)
-  - [Gold Rush](#gold-rush)
-- [Central Europe Campaign](#central-europe-campaign)
-  - [Rail Gun](#rail-gun)
-  - [Fuel Dump](#fuel-dump)
-- [Custom Maps](#custom-maps)
-  - [Supply Depot 2](#supply-depot-2)
-  - [Reactor](#reactor)
-  - [SOS Secret Weapon](#sos-secret-weapon)
 
-#
-# North Africa Campaign
-## Oasis
-![](14s.jpg)  
+- [Maps/Campaigns](#mapscampaigns)
+  - [North Africa Campaign](#north-africa-campaign)
+    - [Oasis](#oasis)
+    - [Seawall Battery](#seawall-battery)
+    - [Gold Rush](#gold-rush)
+  - [Central Europe Campaign](#central-europe-campaign)
+    - [Wurzburg Radar](#wurzburg-radar)
+    - [Rail Gun](#rail-gun)
+    - [Fuel Dump](#fuel-dump)
+  - [Custom Maps](#custom-maps)
+    - [Supply Depot 2](#supply-depot-2)
+    - [Reactor](#reactor)
+    - [SOS Secret Weapon](#sos-secret-weapon)
+
+---
+
+## North Africa Campaign
+
+### Oasis
+
+![x](14s.jpg)  
 The Axis base lies just on the other side.
 
 The first map in the North Africa campaign is set near an old desert city, and tasks the Allies with blowing up two anti-tank guns deep within an Axis stronghold. The Allies can go in by force, blowing up a wall in the old city, or take a stealthier route, using tunnels under the city that must first be drained using water pumps.
@@ -28,7 +33,7 @@ A central spawn point can be found in the Old City, next to the second water pum
 
 - Once you've breached the wall, the Axis will usually fall back and begin protecting the rear area of the compound. You should make sure the tunnels are drained, forcing the Axis to split their focus on two possible entryways. Axis Engineers will usually start planting mines in the rear yard, but you can avoid many of them by _not_ taking the staircases directly in front of the anti-tank guns; instead, there's a ladder underneath a mounted MG42 in the yard that leads to the second floor.
 
-![](16s.jpg)  
+![x](16s.jpg)  
 This is a good spot for the Axis to watch over the anti-tank guns.
 
 **Axis**: One of the most common mistakes I've seen is for Axis teams to immediately scatter and leave the Old City spawn point unguarded. STOOOOPID!! It's a relatively easy room to defend, and the longer you hold this room, the longer you can stave off the full Allied assault. There's a health and ammo room right next door, and I've managed to hold down this room for extended periods single-handedly. Don't give it up without a fight!
@@ -37,9 +42,11 @@ This is a good spot for the Axis to watch over the anti-tank guns.
 
 - It's to your advantage to have the Allies spend as much time running back and forth before sending them back to limbo, so don't worry about moving forward to the Old City so you can shoot them the second they respawn -- hang back and play defence, and you should be able to fight the Allies off.  
 
-#
-## Seawall Battery
-![](01s.jpg)  
+---
+
+### Seawall Battery
+
+![x](01s.jpg)  
 Getting up this hill will NOT be easy.
 
 The second North Africa map is an uphill beachhead assault, and requires the Allies to destroy a set of gun controls inside an Axis stronghold. The Allies have two routes they can take: the main one up the beachhead requires an Engineer to build an access ramp, and a secondary path leads to the back of the bunker, where a disguised Covert Ops player can sneak in through a back door.
@@ -56,7 +63,7 @@ Towards the back of the bunker, a generator can be destroyed by either an Engine
 
 - If you're unable to get a Covert Ops player in the back door, you'll have to go in by force. A Soldier with a flamethrower is useful for clearing out the front rooms -- just watch out for the mounted MG42 near the entrance. Have a Medic nearby to heal fallen teammates, and you should you should be able to sneak in an Engineer during a lull in the fighting.
 
-![](04s.jpg)  
+![x](04s.jpg)  
 A view overlooking the seawall gun.
 
 **Axis**: The best starting strategy is to send one, maybe two Engineers to patrol the back pathway, mining the area and shooting _anyone_ who comes down the narrow passageway. _Everyone_ else should focus on the front beachhead and keep the Allies from building the access ramp as long as possible. Using air support, mortars and mounted guns, it's possible to hold off the Allies for the entire match; the longer you can keep them at bay, the less time they have to make their real assault.
@@ -67,9 +74,11 @@ A view overlooking the seawall gun.
 
 - Basically **DON'T GO OUT THE BACK DOOR OR ONTO THE BEACH!!!!!!!!!!!!!**
 
-#
-## Gold Rush
-![](10s.jpg)  
+---
+
+### Gold Rush
+
+![x](10s.jpg)  
 Your initial objective: a Jagdpanther tank.
 
 Maybe the best map of the group, "Gold Rush" is a tense affair set in the narrow streets of a North Africa village. The Allies need to first commandeer a tank and drive it along a pre-set path, using Engineers to blow up any barricades that may be in their way. You don't actually "drive" the tank; it will move on its own whenever an Allied player stands next to it.
@@ -78,7 +87,7 @@ Once the tank has arrived at its final destination in a lower courtyard, it will
 
 Adding to the difficulty: at any point, the Axis can damage the tank or the truck, requiring repairs before either can continue moving. The courtyard where the truck is located happens to be right outside an Axis spawn point, so the task of getting the gold out to the truck and driving off to victory is no mean feat.
 
-![](11s.jpg)  
+![x](11s.jpg)  
 When starting, don't get side-tracked -- head to the left.
 
 **Allies**: There's no complex strategy to this map; you simply need to _work as a team_. Don't get side-tracked fixing the truck or blowing up truck barricades until you've taken control of the tank and gotten it down to the lower courtyard.
@@ -97,7 +106,7 @@ When starting, don't get side-tracked -- head to the left.
 
 - When you've secured both crates on the truck, send in an Engineer to repair it and get it moving. Odds are, Axis players will come rushing out and straight up the hill; a Soldier camping near the first truck barricade with a mobile MG42 can rack up tons of kills in no time. After this, it should be relatively smooth sailing the rest of the way to the exit.
 
-![](12s.jpg)  
+![x](12s.jpg)  
 Once the bank is open, the Axis should always have someone protecting it with a mobile MG42.
 
 **Axis**: Like the Allies, the worst thing you can do on this map is scramble around. Concentrate all your energy on defending one spot at a time.
@@ -110,18 +119,20 @@ Once the bank is open, the Axis should always have someone protecting it with a 
 
 - A crucial moment in this map occurs when the tank arrives at the lower barricade. the Axis need to OWN this area, especially right behind the tank. Protect this area vigorously so the Allies can't blow up the barricade or fix the tank.
 
-![](08s.jpg)  
+![x](08s.jpg)  
 Don't let them escape with the truck!
 
 - Once the tank passes the second barricade, don't wait for the tank to blow open the bank -- get to the rear entrance ASAP, and once the bank is open, the entire Axis team should collapse around it. You should have soldiers in every corner of the room, and definitely a few mobile MG42s. If the Allies get both gold crates more than 5 minutes left, you're basically screwed.
 
 - If time is winding down and the Allies are driving away with the gold, you may be able to steal a few seconds by hitting the truck with a rocket, and then send in a few players with flamethrowers to protect it. But let's be honest: if the Allies have gotten this far, they're eventually going to get the truck moving again. Your only hope is that time will run out ... or you'll have to try and do better on the Central Europe maps.
 
-#
-# Central Europe Campaign
+---
 
-**Wurzburg Radar**  
-![](17s.jpg)  
+## Central Europe Campaign
+
+### Wurzburg Radar  
+
+![x](17s.jpg)  
 A view of the Axis yard.
 
 Set in the mountains, the Allies' task here is to break into an Axis base and steal the circuit boards from two new radar dishes for analysis. Each of the boards sits underneath a radar dish in plain sight in the Axis courtyard.
@@ -140,7 +151,7 @@ Once a circuit board has been taken, the Allies need to secure it to a truck wai
 
 - Of course, you don't want to leave the main entrance completely empty; two or three soldiers, at least one mobile MG42, and continued airstrikes should help keep things clear.
 
-![](18s.jpg)  
+![x](18s.jpg)  
 The Allies claim the forward bunker.
 
 **Axis**: Your first objective is to hold the forward base, including the junction outside that leads to the side base. Holding this area can keep the Allies off balance indefinitely ... and keep them from going after the radar parts.
@@ -151,9 +162,11 @@ The Allies claim the forward bunker.
 
 - If someone manages to grab a set of parts, don't panic and start scrambling around; maintain your defensive positions. There are only two ways in and out of the Axis base, and by now, you should have them well-covered. If you were watching over a stolen part, get to the front entrance and try to ambush the thief when he attempts to secure the part to the truck.
 
-#
-## Rail Gun
-![](20s.jpg)
+---
+
+### Rail Gun
+
+![x](20s.jpg)
 
 Another excellent map, "Rail Gun" is set in a snowy train yard, and the only map in the group that casts the Axis in an offensive role. Arranged in a triangular layout with a bunker in the center, the Axis must guide a train along a track to a depot, load it with ammo, guide it back to their starting point, and then load the ammo into a massive railgun and fire it.
 
@@ -171,7 +184,7 @@ An MG42 nest overlooks the midpoint of the track, which also has a track switch 
 
 - If all else fails, you can still destroy the gun controls and prevent the Axis from firing the rail gun. It's not easy, but if you can get your entire team to the rail gun, you may be able to delay things for a few minutes until time runs out.
 
-![](22s.jpg)  
+![x](22s.jpg)  
 Controlling the track switch area is key.
 
 **Axis**: You've got your work cut out for you. It can be very, very hard to break through the Allied defences, and if they're strong enough, they may even collapse around your core spawn point.
@@ -182,17 +195,18 @@ Controlling the track switch area is key.
 
 - Once you're through the track switch, lower it ASAP. You haven't really achieved anything on this map until you've loaded the ammo onto the tug, so make the train gets to the depot OK. Half the Axis team should stick with the train, and the other half should set out to capture the train depot.
 
-![](19s.jpg)  
+![x](19s.jpg)  
 Once you have the train depot, load the ammo and go.
 
 - After the ammo is loaded on the tug, it's time to head back. Repeat your initial assault on the track switch -- it will take everything you've got to break through, so don't get side-tracked worrying about anything else. Watch the train and make sure someone is there to raise the switch when it approaches.
 
 - Once the train gets back to your yard, you'll need to load the ammo onto a second tug, load it into the railgun, and fire it. If the gun controls are busted, THIS is the time to fix them. Send everyone you have to the controls -- if the Allies have entrenched themselves, there's a tower in front of your base that you can use to snipe at them. Fix the controls, fire the gun and you win!
 
+---
 
-#
-## Fuel Dump
-![](05s.jpg)  
+### Fuel Dump
+
+![x](05s.jpg)  
 The Allies need to escort this tank up to the Axis base.
 
 The last map in the group is also one of the toughest for the Allies. Set in the snowy mountains, the Allies need to use a tank to blast their way into an Axis camp, and then blow up their fuel depot. Before that, however, the Allies need to build a bridge over a frozen river, which will be heavily defended by the Axis.
@@ -207,7 +221,7 @@ Once through the first wall, the Allies assume control of the forward spawn poin
 
 - One underhanded bit of strategy: it's possible for an Engineer and Covert Ops to work together and infiltrate the Axis base without the tank ever reaching the Axis base. Once the side grate is blown open, simply (a) send the two through the side entrance; (b) kill an Axis soldier and have the Covert Ops guy steal his uniform; (c) have the disguised Covert Ops player open the door to the Axis base and let the Engineer inside. If the Axis are totally focused on stopping the tank -- which they usually are early on -- they may leave their rear base totally unguarded, making it child's play at this point to blow up the fuel depot for an easy win.
 
-![](07s.jpg)  
+![x](07s.jpg)  
 Flying soldiers are a common sight on this map.
 
 **Axis**: It is more than possible for the Axis to defend this map and never let the tank cross the bridge. Build your guard tower, set up a few mobile MG42s, bring in a sniper, and call in constant airstrikes. The tunnel down by the river makes a nice camping spot -- it has a nice view of the bridge construction point.
@@ -220,10 +234,13 @@ Flying soldiers are a common sight on this map.
 
 That's it! Remember, the best teams are the ones that work together, and you can always check the objectives for each map in the Limbo menu. Work hard enough, and you just might achieve eternal glory!
 
-#
-# Custom Maps
-## Supply Depot 2
-![](supply1.jpg)  
+---
+
+## Custom Maps
+
+### Supply Depot 2
+
+![x](supply1.jpg)  
 The Allies have to take the truck to this barrier, capture the flag, then blow the barrier, as well as a second barrier next to the flag.
 
 They then have to escort the truck round to the main depot, with a side of objective of a command post, where the allies can spawn. At the main depot, there is a front gate, and two side walls, all of which can be blown by engineers. There is also an Axis only door, which can make coverts useful.
@@ -244,7 +261,7 @@ The final part of the map is possibly the hardest. The Allies have to escort the
 
 - Once the controls are activated the best route to take is down the left hand side, through the hole in the east wall, and round the back towards the truck, It is also a good idea to set up a spawn kill at this point to stop the Axis getting near the truck, giving you an easy ride to the end.
 
-![](supply2.jpg)  
+![x](supply2.jpg)  
 This is the view from near the command post, towards the depot gate, it is also a good spot to cover any plant from.
 
 **Axis**: As I said before this is an offensively biased map, so Axis will have a hard time defending here.
@@ -260,14 +277,16 @@ This is the view from near the command post, towards the depot gate, it is also 
 
 - When the gate is blown, you should fall back to the top of the complex, around the crane controls room. A common tactic, and one which works well is to have a flamethrower at the top of the stairs, this is usually quite effective, but will require good team play as medics need to be quick to revive and field ops need to give him a constant supply of ammo.
 
-![](supply3.jpg)  
+![x](supply3.jpg)  
 The Axis don't want this to happen if they can help it.
 
 - If they manage to construct the controls, then it can be a good idea to switch to covert ops quickly, either to blow up the controls before they can press them, this usually only happens if all of the Allies died in their attack, or you can satchel the command post, which means they have to spawn at the flag, which then takes them longer to get to the truck, and thus longer to complete the map.
 
-#
-## Reactor
-![](reactor1.jpg)  
+---
+
+### Reactor
+
+![x](reactor1.jpg)  
 The Allied team has to blow up the coolant controls, to drain both of these towers.
 
 On this map, the Allies have a large variety of objectives, and plenty of ways to do them.
@@ -280,7 +299,7 @@ If the controls are destroyed, and the axis rebuild them before the liquid is dr
 
 **Allies**: The Allies main objective is the coolant controls. They can be satcheled, so engineers are very rarely used in the final stage of this map.
 
--  The 1st, and probably most useful tip for this map is to always have a covert on your team, even at the start. The covert can sneak through an axis only door which is just next to the gate at any time with a suit, and can then go on to destroy the controls. You will usually find a panzer/mg on this map so using the sniper rifle is quite a good idea. 
+- The 1st, and probably most useful tip for this map is to always have a covert on your team, even at the start. The covert can sneak through an axis only door which is just next to the gate at any time with a suit, and can then go on to destroy the controls. You will usually find a panzer/mg on this map so using the sniper rifle is quite a good idea.
 
 - The best bet for Allies is to get the parts 1st, then build the truck, as without them the truck is useless. However, the truck is pretty much un-destroyable so it doesn't really matter in which order you do this.
 
@@ -296,7 +315,7 @@ If the controls are destroyed, and the axis rebuild them before the liquid is dr
 
 **Axis**: The Axis objective for this map is simply to stop the Allies achieving theirs.
 
-![](reactor2.jpg)
+![x](reactor2.jpg)
 
 - This is a good spot for any axis player to cover the box of explosives, and you will often find people putting an MG42 up here, which can be very effective.
 
@@ -310,9 +329,11 @@ If the controls are destroyed, and the axis rebuild them before the liquid is dr
 
 - The best thing for Axis on this map, as mentioned before, is teamwork. The map gets crazy at times as people try and satchel the controls, and try and repair them. Reactor is also know as quite a lotto map, meaning that it is lucky, so if you get a bit of luck, and work well as a team, then you should be ok.
 
-#
-## SOS Secret Weapon
-![](secret1.jpg)  
+---
+
+### SOS Secret Weapon
+
+![x](secret1.jpg)  
 The Allied team has to take the secret weapon from this room, and take it to an awaiting aircraft.
 
 In order to take the secret weapon, the Allies have to blow either or both of the doors, the upper door and the lower door.
@@ -321,10 +342,10 @@ They have to also build a radio in order for the plane to be able to take off, a
 
 The Allies can also capture a flag, where they will then automatically spawn, the Axis can capture it back, but cannot spawn there.
 
-#
+---
+
 **Braundorf B2**  
 Coming Soon
-#
+
 **Dubrovnik**  
 Coming Soon
-#
