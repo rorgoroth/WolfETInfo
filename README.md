@@ -1,15 +1,12 @@
-# Backup of net-clan Wolfenstein: Enemy Territory documentation
+# Wolfenstein: Enemy Territory
 
-This is a backup of <https://www.net-clan.com/WolfWeb/> for historical/educational/archival purposes. Keep in mind this refered to the vanilla game as it was in 2007/v2.60b - but nothing has changed since then anyway.
+This is a backup of WolfET Net-Clan and StrategyWiki articles for historical/educational/archival purposes. Keep in mind this refered to the vanilla game as it was in 2007/v2.60b - but nothing has changed since then anyway.
 
-Note: Some links are broken as the original pages are already missing from the web. 98% of it is here though.
+You can view each one in its respective directory:
 
-## Table of Contents
+1. [Net-Clan](/NetClan/README.md)
+2. [StrategyWiki](/StrategyWiki/README.md)
 
-1. [Intro (hints)](/1_Intro/hints.md)
-1. [Maps](/2_Maps/maps.md)
-1. [Classes](/3_Classes/classes.md)
-1. [Weapons](/4_Weapons/weapons.md)
-1. [Tactics](/5_Tactics/tactics.md)
-1. [Medic Help](/6_MedicHelp/medics.md)
-1. [Scripts/Binds](/7_Scripts/scripts.md)
+## Backup of StrategyWiki Wolfenstein: Enemy Territory documentation
+
+This is a backup of WolfET Net-Clan and StrategyWiki articles for historical/educational/archival purposes. Keep in mind this refered to the vanilla game as it was in 2007/v2.60b - but nothing has changed since then anyway.
