@@ -1,7 +1,9 @@
-# Classes 
+# Classes
+
 Need some tips to play at your full effectiveness? Whether you need a beginner's guide to the classes or advanced strategies for winning, this is the place. Complete info on the class-specific skills and advice that's guaranteed to boost your score.
 
-#
+---
+
 - [Classes](#classes)
   - [Soldier](#soldier)
   - [Medic](#medic)
@@ -9,8 +11,10 @@ Need some tips to play at your full effectiveness? Whether you need a beginner's
   - [Field Op](#field-op)
   - [Covert Ops](#covert-ops)
 
-#
+---
+
 ## Soldier
+
 Unlike the other classes, the soldier is defined entirely by the weapon they choose to carry. No special abilities, no mission-specific goals, and little use for the power bar. So, this guide will be a discussion of the pros and cons of the various weapons available, and how best to use them.
 
 **Mortar**: Not a terribly easy weapon to use. Carrying it drastically slows your speed, like all heavy weapons, and it's utterly useless in a firefight. However, it's the only weapon that allows you to attack the front lines not just from a distance, but from complete safety behind walls. The mortar must be deployed before it can be fired, and then the elevation (range) and azimuth (horizontal facing) are adjusted with the mouse. Hitting the primary fire key drops in a round, which is then lobbed through the air. Fortunately, the command map (G) can be used to display the target of shells that fall outside of your field of view. Any artillery strikes called by Field Ops will also appear on your map and in your sights, so you can sit back and let others pick your targets for you. Note that, assuming equal elevation and no intervening barriers, each 5 degrees of elevation below 90 will lob a mortar round almost exactly 1 square's distance on the command map. The mortar begins with 12 shots, and each drains 1/2 of a full power bar.
@@ -23,11 +27,9 @@ Unlike the other classes, the soldier is defined entirely by the weapon they cho
 
 **Thompson/MP40**: Honestly, there's not much to say about the sub-machinegun. There's little use for a soldier with one, because any class (other than Covert Ops) can carry one **and** perform other useful functions. If you want a Thompson and ammo, it's really best to pick Field Ops so you can contribute something else to your team.
 
-  
 Soldiers have semi-exclusive access to the Heavy Weapons skill, while other classes can gain experience by using the mounted MG42s found in the levels, but aren't likely to come by it as quickly or easily as a true soldier. So here's everything you need to know about the Heavy Weapons skill, taken from the manual. (if you want to read the entire thing, check the Wolfenstein: Enemy Territory group in the start menu)
 
-**Heavy Weapons**
-
+**Heavy Weapons**  
 This rewards players for kills with Heavy Weapons. Players of any class will earn 3XP for a kill using an Emplaced or Mounted MG. Soldiers earn 3XP for kills with the Mobile MG42, Panzerfaust, Flamethrower or Mortar. You earn 3XP whether the kill is due to explosive splash damage or a direct hit.
 
 **Heavy Weapons Level 1: Improved Projectile Resources**  
@@ -42,9 +44,10 @@ You've been lugging heavy chunks of metal around the battlefield for so long, yo
 **Heavy Weapons Level 4: Improved Weapon Handling**  
 Such is your skill at toting weaponry, you are now able to handle a Light Weapon in one handed slot, freeing up the two handed slot for an alternate Heavy Weapon. This means you can now carry an SMG and a Mortar, for instance.
 
+---
 
-#
 ## Medic
+
 Starting out, the medic is probably the least-flexible and least-equipped of all the classes in Enemy Territory. You start with a Thompson (MP40 if Axis) with a single clip of ammo, a grenade, 8 syringes, and the health pack. So it should be fairly obvious that at least initially, a medic is not a front-line fighter. Their primary strength lies with keeping the rest of their team combat-ready, and their syringes even allow them to revive the recently-killed on the field of battle.
 
 The two unique abilities of the medic are the health pack and syringe. The health pack drops a kit which provides 20 points of health, and initially requires a quarter of the medic's power bar to use. When level 2 first aid is reached the health packs require only 15% of the power bar, allowing the medic to heal a much larger amount in the same amount of time.
@@ -57,11 +60,9 @@ A medic can expect to gain experience, and thus ranks, very quickly on the front
 
 Finally, remember that the power of a lone medic should not be overlooked. Their ability to heal themselves, when coupled with their innate regeneration, makes them excellent for defending a position by themselves when necessary. A medic behind the barrel of an MG42 can often hold off an entire team for some time by healing themselves when necessary.
 
-  
 So here's the lowdown on first aid, the medic's special ability. This is cropped from the manual - you can read the whole thing by checking in the Wolfenstein: Enemy Territory program group.
 
-**First Aid**
-
+**First Aid**  
 This is a Medic-specific skill that rewards players for reviving team-mates and healing them with Health Packs. Medics earn 1XP each time they heal someone with a Health Pack and 4XP every time they revive another player with their Syringe.
 
 **First Aid Level 1: Medic Ammo**  
@@ -76,8 +77,10 @@ Syringes now return fallen team-mates to full health.
 **First Aid Level 4: Adrenaline Self**  
 To equip the adrenaline shot press the Special Weapon 1 key (5 by default) twice and then press the primary fire key to inject the Adrenaline syringe. Doing so will impart a temporary bonus in Health and Stamina. For 10 seconds you will only suffer half damage from any attack and your Stamina Bar will not decrease at all, even if you are sprinting. This will give you the ability to rush into and out of strongly defended areas which may prove of critical tactical importance.
 
-#
+---
+
 ## Engineer
+
 In many ways, the engineer is the most important class in Enemy Territory. They are, of course, the only class that can build structures, repair vehicles, and dynamite objectives. In fact, Rail Gun is the only map that can be won without the aid of an engineer - on every other map, each team needs at least one to achieve victory.
 
 The first decision to be made as an engineer is which weapon to choose. The Thompson/MP40 is a good all-around choice, with a good balance between accuracy, power, and firing rate. You really can't go wrong with a good submachinegun, after all. The rifle is the only other choice for an engineer - K43 for the Axis, and the M1 Garand for the Allies. Each shot packs more than double the punch of the SMGs, but the clip is limited and you're stuck with semi-automatic fire. The rifle is also extremely inaccurate when you're running around and jumping, making it a close-range weapon unless you have time to crouch or (ideally) go prone. For the middle ranges, the pistol is probably a better choice.
@@ -115,8 +118,10 @@ The expertise of the veteran Engineer means that constructing and repairing obje
 **Engineering Level 4: Issued Flak Jacket**  
 Only the most expert Engineers who have proven their ability to survive on the battlefield are issued with these expensive Flak Jackets which provides the player with 50% damage deflection from explosive weapons.
 
-#
+---
+
 ## Field Op
+
 That's right you're now _the_ man! The only class that can not only call in air and artillery strikes with your trusty smoke canister and binoculars, but you're a walking ammo cache to boot! You'll be carrying a standard weapons loadout of a knife, a pistol (single handed weapon) and a sub machine gun (two handed weapon) into battle, but you're packing much more punch than that with your special abilities, so let's learn how to best use this power without blowing up our own troops.
 
 Since the Field Ops class is a weapon based class, the best spot for a Field Ops under normal circumstances is with someone who is going to be doing little else than trying to decimate as much of the enemy forces as possible, the Soldier Class. The Soldier is the heavy weapons expert and packs the biggest punch, so naturally he'll be chewing up ammo faster than any other class. Either in a support position of defence or helping pave the way on the attack, a Field Ops is a vital part of keeping the big guns booming with ammo packs-o-plenty.
@@ -148,8 +153,10 @@ Your expertise in identifying key enemy targets is rewarded by diverting more fi
 **Signals Level 4: Enemy Recognition**  
 Your observational skill and battlefield experience now means that you can identify disguised enemy Covert Ops. Placing your cross-hairs over an Enemy infiltrator will result in a Disguised Enemy prompt and their location will be highlighted on your team's Command Map.
 
-#
+---
+
 ## Covert Ops
+
 Playing as Covert Ops, the newest total Wolfenstein class born in Wolfenstein: Enemy Territory, you must get a new mind set in place. You are the best-equipped class to run the lone wolf tactic. Running on your own, outside a supported fire team, you'll progress through rank by undermining the enemy efforts whether defence, or offense. You are swift, silent and deadly. You are the night.
 
 Your weapons loadout when starting as a Covert Ops class player is based on stealth and accuracy. Your silenced pistol (single handed weapon) and choice of a silenced M1S Garand or K43 for sniping joy, or the scoped automatic FG42, or even the accurate and automatic Sten MkII S make up an arsenal of deadly, ghost like power. Combine this with the class specific smoke grenade and satchel charges, season with the standard grenade and you've got yourself a walking hazard.
